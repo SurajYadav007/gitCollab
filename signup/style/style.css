@@ -1,0 +1,45 @@
+body{
+    background-color: #ecfcf8;
+}
+
+.container{
+    width : 30%;
+    margin: 10% auto;
+    background-color: #48C9B0;
+    padding: 15px 30px;
+    max-width: 400px;
+    box-shadow: 0px 1px 19px -4px rgba(0,0,0,0.75);
+}
+
+.container > h2{
+    text-align: center;
+    color: white;
+    font-family: 'Genos', sans-serif;
+    font-weight: 700;
+    letter-spacing: 4px;
+}
+
+form > input {
+    width: 100%;
+    padding: 10px 6px;
+    margin: 6px 0px;
+    background-color: #F2F2F2;
+    border: none;
+    box-sizing: border-box;
+    font-family: 'Genos', sans-serif
+}
+
+form > button{
+    display: block;
+    width: 100%;
+    padding: 8px;
+    background-color: #17A589;
+    margin: auto;
+    margin-top: 8px;
+    margin-bottom: 0px;
+    border: none;
+}
+#Log_in{
+    margin-top: 0px;
+}
+
