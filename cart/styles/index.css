@@ -100,3 +100,16 @@ button:hover{
     margin-top: 0.2em;
     margin-bottom: 0.2em;
 }
+
+.pricing-details{
+    display : flex;
+    gap : 0.5em;
+}
+
+.strike-off{
+    text-decoration: line-through;
+}
+
+.discount{
+    color : red;
+}
