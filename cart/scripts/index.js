@@ -97,6 +97,7 @@ let wearableItems = [
 ];
 
 const items = document.querySelector('#items');
+const collapseBtn = document.querySelector('#collapse-button');
 
 wearableItems.forEach((item) => {
   const {
@@ -123,13 +124,13 @@ wearableItems.forEach((item) => {
   const itemName = document.createElement('h4');
   itemName.textContent = name;
 
-  const itemBrand = document.createElement('h4');
+  const itemBrand = document.createElement('h5');
   itemBrand.textContent = brand;
 
   const sizeAndQuantity = document.createElement('div');
   sizeAndQuantity.classList.add('sizeAndQuantity');
 
-  const sizeSpan = document.createElement('h4');
+  const sizeSpan = document.createElement('h5');
   sizeSpan.textContent = 'Size: ';
 
   const itemSize = document.createElement('select');
@@ -147,8 +148,12 @@ wearableItems.forEach((item) => {
     itemSize.append(option);
   });
   itemSize.value = size;
+  itemSize.addEventListener('change', (event) => {
+    item.size = event.target.value;
+    console.log(item);
+  });
 
-  const quantitySpan = document.createElement('h4');
+  const quantitySpan = document.createElement('h5');
   quantitySpan.textContent = 'Quantity: ';
 
   const itemQuantity = document.createElement('select');
@@ -161,26 +166,57 @@ wearableItems.forEach((item) => {
   }
 
   itemQuantity.value = quantity;
+  itemQuantity.addEventListener('change', (event) => {
+    item.quantity = event.target.value;
+    console.log(item);
+  });
 
-  sizeAndQuantity.append(sizeSpan, itemSize, quantitySpan, itemQuantity);
+  const sizeContainer = document.createElement('div');
+  sizeContainer.classList.add('dropdown-container');
+  sizeContainer.append(sizeSpan, itemSize);
+
+  const quantityContainer = document.createElement('div');
+  quantityContainer.classList.add('dropdown-container');
+  quantityContainer.append(quantitySpan, itemQuantity);
+
+  sizeAndQuantity.append(sizeContainer, quantityContainer);
 
   const pricingDetails = document.createElement('div');
   pricingDetails.classList.add('pricing-details');
 
-  const itemPrice = document.createElement('h3');
+  const itemPrice = document.createElement('h4');
   itemPrice.textContent = `₹${cost}`;
 
-  const itemSellingPrice = document.createElement('h3');
+  const itemSellingPrice = document.createElement('h4');
   itemSellingPrice.textContent = `₹${selling_cost}`;
   itemSellingPrice.classList.add('strike-off');
 
-  const itemDiscount = document.createElement('h3');
+  const itemDiscount = document.createElement('h4');
   itemDiscount.textContent = discount;
   itemDiscount.classList.add('discount');
 
   pricingDetails.append(itemPrice, itemSellingPrice, itemDiscount);
 
+  const removeBtn = document.createElement('button');
+  removeBtn.textContent = 'X';
+  removeBtn.classList.add('remove-button');
+  removeBtn.addEventListener('click', (event) => {
+    event.target.parentNode.remove();
+  });
+
   itemInfo.append(itemName, itemBrand, sizeAndQuantity, pricingDetails);
-  card.append(img, itemInfo);
+  card.append(img, itemInfo, removeBtn);
   items.append(card);
+});
+
+collapseBtn.addEventListener('click', (event) => {
+  const type = event.target.textContent;
+  const collpaseItem = document.querySelector('.collapse');
+  if (type === 'Show More') {
+    event.target.textContent = 'Show Less';
+    collpaseItem.style.display = 'block';
+  } else if (type === 'Show Less') {
+    event.target.textContent = 'Show More';
+    collpaseItem.style.display = 'none';
+  }
 });
