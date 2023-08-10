@@ -22,7 +22,7 @@ body{
 #container{
     display : flex;
     margin : auto;
-    width : 80%;
+    width : 85%;
     gap : 1em;
 }
 
@@ -31,12 +31,12 @@ body{
 }
 
 #manage-item{
-    width : 70%;
+    width : 60%;
     border-right: 1px solid rgb(192, 188, 188);
 }
 
 #place-order{
-    width : 20%;
+    width : 30%;
 }
 
 #manage-item > div:first-child{
@@ -159,4 +159,45 @@ button:hover{
 
 .remove-button:hover{
     background-color: white;
+}
+
+#place-order > div{
+    border-bottom : 1px solid rgb(192, 188, 188);
+    padding : 0.5em;
+}
+
+#place-button{
+    color : white;
+    background-color: rgb(255,63,108);
+    width : 100%;
+    font-size : medium;
+    padding : 0.5em;
+}
+
+#place-button:hover{
+    background-color:rgba(255, 63, 108, 0.774);
+}
+
+#total-amount{
+    display : flex;
+    justify-content: space-between;
+}
+
+#price-details{
+    display : grid;
+    grid-template-columns: repeat(2,1fr);
+    gap : 0.5em;
+}
+
+.pd-right{
+    text-align: right;
+}
+
+#totalDiscount{
+    color : rgb(2,166,132);
+}
+
+#total-amount{
+    border-top : 1px solid rgb(192, 188, 188);
+    margin-top : 0.5em;
 }

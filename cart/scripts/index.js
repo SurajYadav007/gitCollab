@@ -95,9 +95,14 @@ let wearableItems = [
     size: 'M',
   },
 ];
+let totalSellingPrice = 0;
+let totalPrice = 0;
 
 const items = document.querySelector('#items');
 const collapseBtn = document.querySelector('#collapse-button');
+const totalMRP = document.querySelector('#totalMRP');
+const totalDiscount = document.querySelector('#totalDiscount');
+const totalAmount = document.querySelector('#total-amount > h4:last-child');
 
 wearableItems.forEach((item) => {
   const {
@@ -111,6 +116,9 @@ wearableItems.forEach((item) => {
     quantity,
     size,
   } = item;
+
+  totalPrice += cost;
+  totalSellingPrice += selling_cost;
 
   const card = document.createElement('div');
   card.classList.add('item-card');
@@ -202,12 +210,21 @@ wearableItems.forEach((item) => {
   removeBtn.classList.add('remove-button');
   removeBtn.addEventListener('click', (event) => {
     event.target.parentNode.remove();
+    totalPrice -= cost;
+    totalSellingPrice -= selling_cost;
+    totalMRP.textContent = totalSellingPrice;
+    totalDiscount.textContent = `-${totalSellingPrice - totalPrice}`;
+    totalAmount.textContent = totalPrice;
   });
 
   itemInfo.append(itemName, itemBrand, sizeAndQuantity, pricingDetails);
   card.append(img, itemInfo, removeBtn);
   items.append(card);
 });
+
+totalMRP.textContent = totalSellingPrice;
+totalDiscount.textContent = `-${totalSellingPrice - totalPrice}`;
+totalAmount.textContent = totalPrice;
 
 collapseBtn.addEventListener('click', (event) => {
   const type = event.target.textContent;
