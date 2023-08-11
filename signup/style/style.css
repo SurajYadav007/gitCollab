@@ -44,3 +44,19 @@ form > button{
     margin-top: 0px;
 }
 
+/* pop-up */
+
+#pop_up{
+    width: 20%;;
+    max-width: 200px;;
+    margin: auto;
+    background-color: #FDEEF1;
+    font-family: 'Genos', sans-serif;
+}
+#pop_up > button{
+background-color: #FF3F6C;
+border: none;
+padding: 10px;
+border-radius: 10px;
+float: right;
+} 

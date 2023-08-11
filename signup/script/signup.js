@@ -1,6 +1,8 @@
 var form = document.querySelector("form");
 var signup_details = JSON.parse(localStorage.getItem("signup-details")) || [];
-
+var popup = document.getElementById("pop_up");
+var loged = document.getElementById("tologin");
+var cont = document.getElementsByClassName("container");
 
 form.addEventListener("submit",function(el){
     el.preventDefault();
@@ -26,12 +28,17 @@ form.addEventListener("submit",function(el){
     } else {
         signup_details.push(obj);
         localStorage.setItem("signup-details", JSON.stringify(signup_details));
-        window.location.assign("#");
+        cont[0].style.display = "none"
+        popup.style.display = "block";
     }
 })
 
 var Log_in = document.getElementById("Log_in");
 
 Log_in.addEventListener("click",function(){
-    window.location.assign("#")
+    window.location.assign("./login.html")
+})
+
+loged.addEventListener("click",function(){
+    window.location.assign("./login.html");
 })
