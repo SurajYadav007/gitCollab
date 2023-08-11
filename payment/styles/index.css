@@ -74,7 +74,7 @@ svg {
 p>b {
     letter-spacing: 3px;
 }
-    
+
 .line {
     border-top: 1px dashed;
     width: 50px;
@@ -252,4 +252,69 @@ p {
 
 .checkout-footer .images {
     display: inline-block;
+}
+
+.orderbox {
+
+    border-radius: 5px;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+.pricedets {
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.total,
+.discount,
+.amount {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.totalprice,
+.filldiscount,
+.amount_pay {
+    font-weight: bold;
+}
+
+@media screen and (max-width: 480px) {
+
+    /* Adjust styles for mobile devices */
+    body {
+        font-size: 14px;
+    }
+
+    #navbar {
+        padding: 10px 20px;
+    }
+
+    /* Adjust the alignment of the navbar elements */
+    #nav2 {
+        width: 100%;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    /* ... other styles ... */
+}
+
+/* Tablets */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+
+    /* Adjust styles for tablets */
+    #cart {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #main1 {
+        width: 100%;
+    }
+
+    /* ... other styles ... */
 }
