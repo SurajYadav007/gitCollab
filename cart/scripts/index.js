@@ -103,6 +103,7 @@ const collapseBtn = document.querySelector('#collapse-button');
 const totalMRP = document.querySelector('#totalMRP');
 const totalDiscount = document.querySelector('#totalDiscount');
 const totalAmount = document.querySelector('#total-amount > h4:last-child');
+const placeButton = document.querySelector('#place-button');
 
 wearableItems.forEach((item) => {
   const {
@@ -236,4 +237,18 @@ collapseBtn.addEventListener('click', (event) => {
     event.target.textContent = 'Show More';
     collpaseItem.style.display = 'none';
   }
+});
+
+placeButton.addEventListener('click', (event) => {
+  const orderPricingDetails = {
+    totalMRP: totalSellingPrice,
+    discount: totalSellingPrice - totalPrice,
+    totalAmount: totalPrice,
+  };
+
+  localStorage.setItem(
+    'order-pricing-details',
+    JSON.stringify(orderPricingDetails)
+  );
+  window.location.href = './address.html';
 });
