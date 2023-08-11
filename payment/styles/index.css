@@ -35,8 +35,8 @@ svg {
     justify-content: space-between;
     box-sizing: border-box;
     padding: 0px 50px;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     font-weight: bold;
+
 }
 
 #logo {
@@ -74,7 +74,7 @@ svg {
 p>b {
     letter-spacing: 3px;
 }
-
+    
 .line {
     border-top: 1px dashed;
     width: 50px;

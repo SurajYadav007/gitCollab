@@ -41,4 +41,20 @@ paymentMethods.forEach(method => {
         // Display content in paymentDiv
         paymentDiv.innerHTML = `<h4>${method.querySelector('h5').textContent}</h4><p>Additional content here...</p>`;
     });
-}); 
+});
+
+const showMoreLink = document.getElementById('showMore');
+const showLessLink = document.getElementById('showLess');
+const additionalOffers = document.getElementById('additionalOffers');
+
+showMoreLink.addEventListener('click', () => {
+    additionalOffers.style.display = 'block';
+    showMoreLink.style.display = 'none';
+    showLessLink.style.display = 'block';
+});
+
+showLessLink.addEventListener('click', () => {
+    additionalOffers.style.display = 'none';
+    showMoreLink.style.display = 'block';
+    showLessLink.style.display = 'none';
+});
