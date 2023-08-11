@@ -393,11 +393,16 @@ let clothes = [
       btn.style.display = "none";
   
       btn.onclick = () => {
+
+        if(localStorage.getItem("Logedin") == null){
+          window.location.assign("../signup/login.html")
+        }else{
         wishlist.push(el);
         cart.push(el);
   
         localStorage.setItem("wishlist", JSON.stringify(wishlist));
         localStorage.setItem("cart", JSON.stringify(cart));
+        }
       };
   
       let star = document.createElement("span");
