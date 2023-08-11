@@ -11,7 +11,7 @@
 </head>
 <body>
     <div class="container">
-           <h2>-Visitor-</h2>
+           <h2 id="visitor">-Visitor-</h2>
            <form>
                 <input required type="text" id="fullName" placeholder="Full name"><br>
                 <input required type="text" id="user_name" placeholder="UserName"><br>
@@ -21,6 +21,10 @@
                 <button type="submit">SUBMIT</button><br>
                 <button id="Log_in">LOG-IN</button><br>
            </form>
+    </div>
+    <div id="pop_up" style="display: none;">
+          <h3>Signup sucessfull !!</h3>
+          <button id="tologin">Login</button>
     </div>
 </body>
 <script src="./script/signup.js"></script>
