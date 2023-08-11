@@ -1,6 +1,6 @@
 let clothes = [
     {
-      type:"tshirt",
+      type:"top",
         img1: "https://m.media-amazon.com/images/I/818m3AOjXCL._AC_UL800_FMwebp_QL65_.jpg",
         price: "Rs. 399",
         cost: 399,
@@ -17,7 +17,7 @@ let clothes = [
       },
     
     {
-      type:"tshirt",
+      type:"top",
         img1: "https://m.media-amazon.com/images/I/61rmlqc8ekL._AC_UL800_QL65_.jpg",
         price: "Rs. 499",
         cost: 499,
@@ -34,7 +34,7 @@ let clothes = [
       },
     
     {
-      type:"tshirt",
+      type:"top",
         img1: "https://m.media-amazon.com/images/I/71xlUtvITyL._AC_UL800_QL65_.jpg",
         price: "Rs. 599",
         cost: 599,
@@ -51,7 +51,7 @@ let clothes = [
       },
     
     {
-      type:"tshirt",
+      type:"top",
         img1: "https://m.media-amazon.com/images/I/81wrZBgXEkL._AC_UL800_FMwebp_QL65_.jpg",
         price: "Rs. 843",
         cost: 843,
@@ -68,7 +68,7 @@ let clothes = [
       },
     
     {
-      type:"tshirt",
+      type:"top",
         img1: "https://m.media-amazon.com/images/I/61wdVJfjUWL._AC_UL800_FMwebp_QL65_.jpg",
         price: "Rs. 843",
         selling_cost: 872,
@@ -85,7 +85,7 @@ let clothes = [
       },
     
     {
-      type:"tshirt",
+      type:"top",
         img1: "https://m.media-amazon.com/images/I/91EgMLmGswL._AC_UL800_QL65_.jpg",
         price: "Rs. 1139",
         cost: 1139,
@@ -101,7 +101,7 @@ let clothes = [
       },
     
     {
-      type:"tshirt",
+      type:"top",
         img1: "https://m.media-amazon.com/images/I/71VVfOV7s2L._AC_UL800_QL65_.jpg",
         price: "Rs. 1379",
         cost: 1379,
@@ -118,7 +118,7 @@ let clothes = [
       },
     
     {
-      type:"tshirt",
+      type:"top",
         img1: "https://m.media-amazon.com/images/I/51McZFUEPNL._AC_UL800_QL65_.jpg",
         price: "Rs. 1523",
         cost: 1523,
@@ -135,7 +135,7 @@ let clothes = [
       },
     
     {
-      type:"tshirt",
+      type:"top",
         img1: "https://m.media-amazon.com/images/I/61Jayv1qo6L._AC_UL800_QL65_.jpg",
         price: "Rs. 1499",
         cost: 1499,
@@ -152,7 +152,7 @@ let clothes = [
       },
     
     {
-      type:"tshirt",
+      type:"top",
         img1: "https://m.media-amazon.com/images/I/81DOBXFFOGL._AC_UL800_QL65_.jpg",
         price: "Rs. 1099",
         cost: 1099,
@@ -169,7 +169,7 @@ let clothes = [
       },
     
     {
-      type:"tshirt",
+      type:"top",
         img1: "https://m.media-amazon.com/images/I/71k858XN9dL._AC_UL800_QL65_.jpg",
         price: "Rs. 279",
         cost: 279,
@@ -187,7 +187,7 @@ let clothes = [
     
   
     {
-      type:"tshirt",
+      type:"top",
         img1: "https://m.media-amazon.com/images/I/810XLWLRufL._AC_UL800_QL65_.jpg",
         price: "Rs. 359",
         cost: 359,
@@ -205,7 +205,7 @@ let clothes = [
     
   
     {
-      type:"tshirt",
+      type:"top",
         img1: "https://m.media-amazon.com/images/I/71+KW+fb1oL.AC_UL800_QL65.jpg",
         price: "Rs. 769",
         cost: 769,
@@ -222,7 +222,7 @@ let clothes = [
       },
     
     {
-      type:"tshirt",
+      type:"top",
         img1: "https://m.media-amazon.com/images/I/91BugKTBWDL.AC_UL800_QL65.jpg",
         price: "Rs. 567",
         cost: 567,
@@ -240,7 +240,7 @@ let clothes = [
     
   
     {
-      type:"tshirt",
+      type:"top",
         img1: "https://m.media-amazon.com/images/I/71A2p4zM9KL.AC_UL800_QL65.jpg",
         price: "Rs. 599",
         cost: 599,
@@ -257,7 +257,7 @@ let clothes = [
       },
   
     {
-      type:"tshirt",
+      type:"top",
         img1: "https://m.media-amazon.com/images/I/813YzCT7qNL.AC_UL800_QL65.jpg",
         price: "Rs. 479",
         cost: 479,
@@ -274,7 +274,7 @@ let clothes = [
       },
     
     {
-      type:"tshirt",
+      type:"top",
         img1: "https://m.media-amazon.com/images/I/714Sc6sKBfL.AC_UL800_QL65.jpg",
         price: "Rs. 579",
         cost: 579,
@@ -291,7 +291,7 @@ let clothes = [
       },
     
     {
-      type:"tshirt",
+      type:"top",
         img1: "https://m.media-amazon.com/images/I/81FC0ECOW4L.AC_UL800_QL65.jpg",
         price: "Rs. 2139",
         cost: 2139,
@@ -309,7 +309,7 @@ let clothes = [
     
   
     {
-      type:"tshirt",
+      type:"top",
         img1: "https://m.media-amazon.com/images/I/41BkOONYzqL.AC_UL800_QL65.jpg",
         price: "Rs. 526",
         cost: 526,
@@ -327,7 +327,7 @@ let clothes = [
     
   
     {
-        type:"tshirt",
+        type:"top",
         img1: "https://m.media-amazon.com/images/I/81G9+-B8sVL.AC_UL800_QL65.jpg",
         price: "Rs. 1339",
         cost: 1339,

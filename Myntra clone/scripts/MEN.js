@@ -1,6 +1,6 @@
 let clothes = [
     {
-      type:"tshirt",
+      type:"top",
         img1: "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/14197850/2021/6/5/363f66c6-cf69-4bef-bf65-d34b969d7b6e1622879758086USPoloAssnDenimCoMenMustardYellowBrandLogoPoloCollarT-shirt1.jpg",
         price: "Rs. 399",
         cost: 399,
@@ -17,7 +17,7 @@ let clothes = [
       },
   
     {
-      type:"tshirt",
+      type:"top",
         img1: "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/12377258/2020/9/11/ce1b7bcb-a65a-4eb0-a317-42ac02718f1e1599798741705UrbanoFashionPrintedMenRoundNeckDarkGreenT-Shirt1.jpg",
         price: "Rs. 499",
         cost: 499,
@@ -36,8 +36,8 @@ let clothes = [
       },
     
     {
-      type:"tshirt",
-        img1: "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/10941384/2020/2/13/9447a845-892a-49f5-91ee-4de8a6589a541581587257528-Roadster-Men-Tshirts-8221581587255142-1.jpg",
+      type:"top",
+        img1: "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/10941384/2020/2/13/9447a845-892a-49f5-91ee-4de8a6589a541581587257528-Roadster-Men-tops-8221581587255142-1.jpg",
   
         price: "Rs. 599",
         cost: 599,
@@ -54,8 +54,8 @@ let clothes = [
       },
     
     {
-      type:"tshirt",
-        img1: "https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/16343396/2022/2/10/c5f6d701-a12f-41de-b751-2a318a0c20ba1644489749463-Levis-Men-Tshirts-9081644489748776-1.jpg",
+      type:"top",
+        img1: "https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/16343396/2022/2/10/c5f6d701-a12f-41de-b751-2a318a0c20ba1644489749463-Levis-Men-tops-9081644489748776-1.jpg",
         price: "Rs. 843",
         cost: 843,
         selling_cost: 1284,
@@ -71,8 +71,8 @@ let clothes = [
       },
     
     {
-      type:"tshirt",
-        img1: "https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/12318240/2021/2/27/b7f27330-eb9b-4cd8-9d2d-64239c4a5adb1614428943368-Calvin-Klein-Jeans-Men-Tshirts-2101614428942578-1.jpg",
+      type:"top",
+        img1: "https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/12318240/2021/2/27/b7f27330-eb9b-4cd8-9d2d-64239c4a5adb1614428943368-Calvin-Klein-Jeans-Men-tops-2101614428942578-1.jpg",
         price: "Rs. 843",
         selling_cost: 872,
         sellPrice: "Rs. 872",
@@ -88,7 +88,7 @@ let clothes = [
       },
     
     {
-      type:"tshirt",
+      type:"top",
         img1: "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/13345216/2021/2/25/ef8f64d1-0875-48dc-b664-bf560f9debb21614246856152-Mast--Harbour-Men-White-Printed-Round-Neck-T-shirt-339161424-1.jpg",
         price: "Rs. 1139",
         cost: 1139,
@@ -104,8 +104,8 @@ let clothes = [
       },
     
     {
-      type:"tshirt",
-        img1: "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/12318240/2021/2/27/b7f27330-eb9b-4cd8-9d2d-64239c4a5adb1614428943368-Calvin-Klein-Jeans-Men-Tshirts-2101614428942578-1.jpg",
+      type:"top",
+        img1: "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/12318240/2021/2/27/b7f27330-eb9b-4cd8-9d2d-64239c4a5adb1614428943368-Calvin-Klein-Jeans-Men-tops-2101614428942578-1.jpg",
         price: "Rs. 1379",
         cost: 1379,
         selling_cost: 2299,
@@ -121,8 +121,8 @@ let clothes = [
       },
     
     {
-      type:"tshirt",
-        img1: "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/11687264/2020/6/9/6fe28196-ea0a-4ea9-b132-8fdf8bbd9e4f1591703233064-Roadster-Men-Tshirts-4241591703231327-1.jpg",
+      type:"top",
+        img1: "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/11687264/2020/6/9/6fe28196-ea0a-4ea9-b132-8fdf8bbd9e4f1591703233064-Roadster-Men-tops-4241591703231327-1.jpg",
         price: "Rs. 1523",
         cost: 1523,
         selling_cost: 2031,
@@ -138,7 +138,7 @@ let clothes = [
       },
     
     {
-      type:"tshirt",
+      type:"top",
         img1: "https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/1915280/2022/3/4/f32024b5-508f-4d79-bfa3-a10d41eb1edd1646390379781-HRX-by-Hrithik-Roshan-Men-Navy-Blue-Abstract-Printed-Active--1.jpg",
         price: "Rs. 1499",
         cost: 1499,
@@ -155,7 +155,7 @@ let clothes = [
       },
     
     {
-      type:"tshirt",
+      type:"top",
         img1: "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/productimage/2020/2/6/1a340c1e-d6e0-4430-8b35-717ba5426f511580945402271-1.jpg",
         price: "Rs. 1099",
         cost: 1099,
@@ -172,8 +172,8 @@ let clothes = [
       },
     
     {
-      type:"tshirt",
-        img1: "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/12816762/2021/1/13/2daea730-43cb-4a5a-9785-d251fb4333c51610534752348-HERENOW-Men-Tshirts-5681610534750290-1.jpg",
+      type:"top",
+        img1: "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/12816762/2021/1/13/2daea730-43cb-4a5a-9785-d251fb4333c51610534752348-HERENOW-Men-tops-5681610534750290-1.jpg",
         price: "Rs. 279",
         cost: 279,
         selling_cost: 291,
@@ -190,7 +190,7 @@ let clothes = [
     
   
     {
-      type:"tshirt",
+      type:"top",
         img1: "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/productimage/2020/7/28/ae4458c8-d0a9-449f-a5e2-f690d7ea2eaf1595892161166-1.jpg",
         price: "Rs. 359",
         cost: 359,
@@ -208,8 +208,8 @@ let clothes = [
     
   
     {
-      type:"tshirt",
-        img1: "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/12816462/2020/11/24/ba18a805-4903-48a4-a136-c60ca39b22911606200984349-HERENOW-Men-Tshirts-1551606200983033-1.jpg",
+      type:"top",
+        img1: "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/12816462/2020/11/24/ba18a805-4903-48a4-a136-c60ca39b22911606200984349-HERENOW-Men-tops-1551606200983033-1.jpg",
         price: "Rs. 769",
         cost: 769,
         selling_cost: 899,
@@ -225,7 +225,7 @@ let clothes = [
       },
     
     {
-      type:"tshirt",
+      type:"top",
         img1: "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/17595630/2022/4/8/233c5a51-c004-47a5-bed2-cc6dfc616d3c1649394875858-AS-M-NK-DF-TEE-LGD-HUMOR-9241649394875293-1.jpg",
         price: "Rs. 567",
         cost: 567,
@@ -243,7 +243,7 @@ let clothes = [
     
   
     {
-      type:"tshirt",
+      type:"top",
         img1: "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/2314451/2018/5/24/7e14d698-6a1d-41ab-a348-9af9a87e8f2e1527137304977-HRX-by-Hrithik-Roshan-Men-Black-Solid-High-Neck-T-shirt-8511527137303720-1.jpg",
         price: "Rs. 599",
         cost: 599,
@@ -260,7 +260,7 @@ let clothes = [
       },
     
     {
-      type:"tshirt",
+      type:"top",
         img1: "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/11126630/2020/1/14/7b3674bf-c4cf-4849-ae73-90593a31b4371578989743003-Roadster-Men-Blue-Printed-Round-Neck-T-shirt-413157898974132-1.jpg",
         price: "Rs. 479",
         cost: 479,
@@ -277,8 +277,8 @@ let clothes = [
       },
     
     {
-      type:"tshirt",
-        img1: "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/11487316/2020/6/17/7747f19e-1995-4c19-bd44-34b84d03defe1592395213591-Nautica-Men-Tshirts-1431592395211486-1.jpg",
+      type:"top",
+        img1: "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/11487316/2020/6/17/7747f19e-1995-4c19-bd44-34b84d03defe1592395213591-Nautica-Men-tops-1431592395211486-1.jpg",
         price: "Rs. 579",
         cost: 579,
         selling_cost: 749,
@@ -294,8 +294,8 @@ let clothes = [
       },
     
     {
-      type:"tshirt",
-        img1: "https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/17979880/2022/5/5/d7d6bc6b-36c1-4c34-adff-5de285aee1ab1651747890769-Van-Heusen-Men-Tshirts-5251651747890233-1.jpg",
+      type:"top",
+        img1: "https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/17979880/2022/5/5/d7d6bc6b-36c1-4c34-adff-5de285aee1ab1651747890769-Van-Heusen-Men-tops-5251651747890233-1.jpg",
         price: "Rs. 2139",
         cost: 2139,
         selling_cost: 4249,
@@ -312,7 +312,7 @@ let clothes = [
     
   
     {
-      type:"tshirt",
+      type:"top",
         img1: "https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/8938197/2019/4/23/b3ea3fc3-8b56-49c9-a007-768f73ac95b91555999726007-Roadster-Men-Black-Printed-Round-Neck-T-shirt-61215559997244-1.jpg",
         price: "Rs. 526",
         cost: 526,
@@ -330,8 +330,8 @@ let clothes = [
     
   
     {
-      type:"tshirt",
-        img1: "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/17471840/2022/3/31/29e4406e-7a9b-4a60-a5ca-b8bf02cd781a1648729180146-Louis-Philippe-ATHPLAY-Men-Tshirts-8781648729179069-1.jpg",
+      type:"top",
+        img1: "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/17471840/2022/3/31/29e4406e-7a9b-4a60-a5ca-b8bf02cd781a1648729180146-Louis-Philippe-ATHPLAY-Men-tops-8781648729179069-1.jpg",
         price: "Rs. 1339",
         cost: 1339,
         selling_cost: 2749,
