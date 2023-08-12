@@ -180,3 +180,73 @@ button:hover{
     border-top : 1px solid rgb(192, 188, 188);
     margin-top : 0.5em;
 }
+
+#check-delivery{
+    display : none;
+    flex-direction: column;
+    gap : 1em;
+    width : 20%;
+    position: fixed;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+}
+
+#check-delivery > input{
+    border : 1px solid rgb(192, 188, 188);
+    padding : 0.5em;
+    border-radius : 0.2em;
+}
+
+#check-delivery > div{
+    display : flex;
+    justify-content: space-between;
+}
+
+.close-button{
+    border : none;
+    color :  rgb(83,86,103);
+}
+
+.close-button:hover{
+    background-color: white;
+}
+
+#check-delivery > input[type='submit']{
+    color : white;
+    background-color: rgb(255,63,108);
+    width : 100%;
+    font-size : medium;
+    padding : 0.5em;
+    border : none;
+}
+
+#check-delivery > input[type='submit']:hover{
+    background-color:rgba(255, 63, 108, 0.774);
+}
+
+#support-buttons{
+    display : flex;
+    gap: 2em;
+    margin-top : 1em;
+}
+
+#support-buttons > button{
+    color :  rgb(83,86,103);
+    border : 1px solid rgb(212, 217, 243);
+    border-radius: 1em;
+    padding : 0.8em;
+}
+
+#support-buttons > button:hover{
+    background-color: white;
+}
+
+.hidden{
+    display : none
+}

@@ -98,6 +98,15 @@ button:hover{
     display : none;
 }
 
+#address-form > div{
+    display : flex;
+    justify-content: space-between;
+}
+
+.close-button{
+    border : none;
+}
+
 form{
     display: flex;
     flex-direction: column;

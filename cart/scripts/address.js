@@ -1,8 +1,14 @@
 var addresses = JSON.parse(localStorage.getItem('address-list')) || [];
+const orderPricingDetails =
+  JSON.parse(localStorage.getItem('order-pricing-details')) || {};
 
 const addressContainer = document.querySelector('#addresses');
 const addNewAddressBtn = document.querySelector('#add-new-address');
 const addressForm = document.querySelector('#address-form');
+const formCloseBtn = document.querySelector('.close-button');
+const totatlMRPSpan = document.querySelector('#totalMRP');
+const totalDiscountSpan = document.querySelector('#totalDiscount');
+const totalAmountSpan = document.querySelector('#total-amount > h4 + h4');
 
 const display = (list) => {
   list.forEach((ele) => {
@@ -40,6 +46,9 @@ const display = (list) => {
 };
 
 display(addresses);
+totatlMRPSpan.textContent = orderPricingDetails.totalMRP;
+totalDiscountSpan.textContent = `-${orderPricingDetails.discount}`;
+totalAmountSpan.textContent = orderPricingDetails.totalAmt;
 
 addNewAddressBtn.addEventListener('click', (event) => {
   addressForm.style.display = 'flex';
@@ -71,3 +80,7 @@ function clearForm() {
   addressForm.city.value = '';
   addressForm.state.value = '';
 }
+
+formCloseBtn.addEventListener('click', (event) => {
+  addressForm.style.display = 'none';
+});
