@@ -381,7 +381,7 @@ const show = document.getElementById("show");
 let bag = document.querySelector(".fa-bag-shopping");
 
 bag.onclick = () => {
-  location.href = "./payment.html";
+  location.href = "#";
 };
 
 // let val = document.querySelector(".select");
@@ -438,7 +438,7 @@ const append = (clothes) => {
     discount.innerText = el.discount;
 
     let btn = document.createElement("button");
-    btn.innerHTML = `<i class="fa-solid fa-cart-shopping"></i>&nbsp&nbspAdd To cart`;
+    btn.innerHTML = `<i class="fa-solid fa-heart"></i>Wishlist`;
     btn.setAttribute("class", "btn");
     btn.style.display = "none";
 
