@@ -123,16 +123,3 @@ showLessLink.addEventListener("click", () => {
   showMoreLink.style.display = "block";
   showLessLink.style.display = "none";
 });
-
-function createRadioButton(labelText) {
-  const radioButton = document.createElement("input");
-  radioButton.type = "radio";
-  radioButton.name = "paymentOptions";
-
-  const label = document.createElement("label");
-  label.textContent = labelText;
-
-  paymentDiv.appendChild(radioButton);
-  paymentDiv.appendChild(label);
-  paymentDiv.appendChild(document.createElement("br"));
-}

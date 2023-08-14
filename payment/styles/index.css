@@ -281,10 +281,9 @@ p {
 .amount_pay {
     font-weight: bold;
 }
-
+/* Medium screen*/
 @media screen and (max-width: 480px) {
 
-    /* Adjust styles for mobile devices */
     body {
         font-size: 14px;
     }
@@ -293,20 +292,25 @@ p {
         padding: 10px 20px;
     }
 
-    /* Adjust the alignment of the navbar elements */
     #nav2 {
         width: 100%;
         justify-content: center;
         margin-top: 10px;
     }
+    .orderbox {
+        order: 1;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
 
-    /* ... other styles ... */
+    .checkout-footer {
+        order: 2;
+    }
 }
 
-/* Tablets */
-@media screen and (min-width: 481px) and (max-width: 768px) {
+/* Small Screens */
+@media screen and (min-width: 481px) and (max-width: 1024px) {
 
-    /* Adjust styles for tablets */
     #cart {
         flex-direction: column;
         align-items: center;
@@ -316,5 +320,12 @@ p {
         width: 100%;
     }
 
-    /* ... other styles ... */
+    #nav2 {
+        width: 100%;
+        justify-content: space-between;
+        margin-top: 10px;
+    }
+    .orderbox {
+        order: 3;
+    }
 }
