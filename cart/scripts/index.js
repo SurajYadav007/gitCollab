@@ -1,4 +1,5 @@
 var wearableItems = JSON.parse(localStorage.getItem('cart-items')) || [];
+const couponsList = JSON.parse(localStorage.getItem('coupons-list')) || [];
 var orderPricingDetails = {
   totalMRP: 0,
   discount: 0,
@@ -6,10 +7,10 @@ var orderPricingDetails = {
   couponDiscount: 0,
   supportUsAmount: 0,
 };
-
 var { totalMRP, discount, totalAmt, couponDiscount, supportUsAmount } =
   orderPricingDetails;
 
+//getting  items form DOM
 const items = document.querySelector('#items');
 const collapseBtn = document.querySelector('#collapse-button');
 const totalMRPAmount = document.querySelector('#totalMRP');
@@ -25,7 +26,17 @@ const socialWorkDonation = document.querySelector('#socialWorkDonation');
 const socialWorkDonationHeading = document.querySelector(
   '#socialWorkDonationHeading'
 );
+const couponsContainer = document.querySelector(
+  '#coupons-container > div:last-child'
+);
+const couponDiscountHeading = document.querySelector('#couponDiscountHeading');
+const couponDiscountSpan = document.querySelector('#couponDiscount');
+const appliedCouponField = document.querySelector('#applied-coupon');
+const applyCouponButton = document.querySelector('#applyCoupon > button');
+const applyCouponContainer = document.querySelector('#coupons-container');
+const closeApplyCouponButton = document.querySelector('#close-apply-coupon');
 
+//  displaying items on cart
 wearableItems.forEach((item) => {
   const {
     type,
@@ -95,10 +106,18 @@ wearableItems.forEach((item) => {
     itemQuantity.append(option);
   }
 
+  //have to get the quantity form local storage in-order to show correct data.
   itemQuantity.value = quantity;
   itemQuantity.addEventListener('change', (event) => {
-    totalMRP += selling_cost * event.target.value - selling_cost * quantity;
-    totalAmt += cost * event.target.value - cost * quantity;
+    orderPricingDetails =
+      JSON.parse(localStorage.getItem('order-pricing-details')) || {};
+    orderPricingDetails.totalMRP +=
+      selling_cost * event.target.value - selling_cost * quantity;
+    orderPricingDetails.totalAmt += cost * event.target.value - cost * quantity;
+    localStorage.setItem(
+      'order-pricing-details',
+      JSON.stringify(orderPricingDetails)
+    );
     updatePricingDetails();
     item.quantity = event.target.value;
     localStorage.setItem('cart-items', JSON.stringify(wearableItems));
@@ -130,6 +149,7 @@ wearableItems.forEach((item) => {
 
   pricingDetails.append(itemPrice, itemSellingPrice, itemDiscount);
 
+  //removing item form cart
   const removeBtn = document.createElement('button');
   removeBtn.textContent = 'X';
   removeBtn.classList.add('remove-button');
@@ -145,10 +165,22 @@ wearableItems.forEach((item) => {
   items.append(card);
 });
 
-totalMRPAmount.textContent = totalMRP;
-totalDiscount.textContent = `-${totalMRP - totalAmt}`;
-totalAmount.textContent = totalAmt + supportUsAmount;
+//review this  during integeration
+orderPricingDetails = {
+  totalMRP,
+  discount: totalMRP - totalAmt,
+  totalAmt,
+  couponDiscount,
+  supportUsAmount,
+};
+localStorage.setItem(
+  'order-pricing-details',
+  JSON.stringify(orderPricingDetails)
+);
 
+updatePricingDetails();
+
+//offers
 collapseBtn.addEventListener('click', (event) => {
   const type = event.target.textContent;
   const collpaseItem = document.querySelector('.collapse');
@@ -161,6 +193,7 @@ collapseBtn.addEventListener('click', (event) => {
   }
 });
 
+//pacing orde3r
 placeButton.addEventListener('click', (event) => {
   orderPricingDetails = {
     totalMRP,
@@ -191,38 +224,34 @@ checkDeliveryForm.addEventListener('submit', (event) => {
   alert('Delivery Available!');
 });
 
+//suport US
 supportButtonsContainer.addEventListener('click', ({ target }) => {
   if (target.localName === 'button') {
     supportToggleCheckBox.checked = true;
-    supportUsAmount = +target.textContent.slice(1);
-    orderPricingDetails = {
-      totalMRP,
-      discount: totalMRP - totalAmt,
-      totalAmt,
-      couponDiscount,
-      supportUsAmount,
-    };
-    updatePricingDetails();
-    socialWorkDonation.classList.remove('hidden');
-    socialWorkDonationHeading.classList.remove('hidden');
+    orderPricingDetails =
+      JSON.parse(localStorage.getItem('order-pricing-details')) || {};
+    orderPricingDetails.supportUsAmount = +target.textContent.slice(1);
+    console.log(orderPricingDetails);
     localStorage.setItem(
       'order-pricing-details',
       JSON.stringify(orderPricingDetails)
     );
+    updatePricingDetails();
+    socialWorkDonation.classList.remove('hidden');
+    socialWorkDonationHeading.classList.remove('hidden');
   }
 });
 
 supportToggleCheckBox.addEventListener('change', (event) => {
   socialWorkDonation.classList.add('hidden');
   socialWorkDonationHeading.classList.add('hidden');
-  supportUsAmount = 0;
-  orderPricingDetails = {
-    totalMRP,
-    discount: totalMRP - totalAmt,
-    totalAmt,
-    couponDiscount,
-    supportUsAmount,
-  };
+  orderPricingDetails =
+    JSON.parse(localStorage.getItem('order-pricing-details')) || {};
+  orderPricingDetails.supportUsAmount = 0;
+  localStorage.setItem(
+    'order-pricing-details',
+    JSON.stringify(orderPricingDetails)
+  );
   updatePricingDetails();
   localStorage.setItem(
     'order-pricing-details',
@@ -231,8 +260,90 @@ supportToggleCheckBox.addEventListener('change', (event) => {
 });
 
 function updatePricingDetails() {
-  totalMRPAmount.textContent = totalMRP;
-  totalDiscount.textContent = `-${totalMRP - totalAmt}`;
-  totalAmount.textContent = totalAmt + supportUsAmount;
-  socialWorkDonation.textContent = supportUsAmount;
+  orderPricingDetails =
+    JSON.parse(localStorage.getItem('order-pricing-details')) || {};
+
+  totalMRPAmount.textContent = orderPricingDetails.totalMRP;
+  totalDiscount.textContent = `-${
+    orderPricingDetails.totalMRP - orderPricingDetails.totalAmt
+  }`;
+  totalAmount.textContent =
+    orderPricingDetails.totalAmt +
+    orderPricingDetails.supportUsAmount -
+    orderPricingDetails.couponDiscount;
+  socialWorkDonation.textContent = orderPricingDetails.supportUsAmount;
+  couponDiscountSpan.textContent = `-${orderPricingDetails.couponDiscount}`;
 }
+
+//adding coupons
+couponsList.forEach((coupon) => {
+  const { couponName, discount, minValue } = coupon;
+
+  const couponCard = document.createElement('div');
+  couponCard.classList.add('coupon-card');
+
+  const couponNameHeading = document.createElement('h5');
+  couponNameHeading.textContent = couponName;
+
+  const couponDescription = document.createElement('p');
+  couponDescription.textContent = `Apply ${couponName} to get ₹${discount} off on an order above ₹${minValue}`;
+
+  const buttonsContainer = document.createElement('div');
+
+  const addCouponButton = document.createElement('button');
+  addCouponButton.textContent = 'ADD';
+  addCouponButton.addEventListener('click', (event) => {
+    orderPricingDetails =
+      JSON.parse(localStorage.getItem('order-pricing-details')) || {};
+    if (orderPricingDetails.totalAmt < minValue) {
+      alert(
+        `Coupon can only be applied to a minimum total Amount of ${minValue}`
+      );
+    } else if (orderPricingDetails.couponDiscount > 0) {
+      alert('A coupon is already applied');
+    } else {
+      appliedCouponField.value = couponName;
+      orderPricingDetails.couponDiscount = discount;
+      localStorage.setItem(
+        'order-pricing-details',
+        JSON.stringify(orderPricingDetails)
+      );
+      updatePricingDetails();
+      couponDiscountSpan.classList.remove('hidden');
+      couponDiscountHeading.classList.remove('hidden');
+    }
+  });
+
+  const removeCouponButton = document.createElement('button');
+  removeCouponButton.textContent = 'REMOVE';
+  removeCouponButton.addEventListener('click', (event) => {
+    appliedCouponField.value = '';
+    orderPricingDetails =
+      JSON.parse(localStorage.getItem('order-pricing-details')) || {};
+
+    orderPricingDetails.couponDiscount = 0;
+    localStorage.setItem(
+      'order-pricing-details',
+      JSON.stringify(orderPricingDetails)
+    );
+    updatePricingDetails();
+    couponDiscountSpan.classList.add('hidden');
+    couponDiscountHeading.classList.add('hidden');
+  });
+
+  buttonsContainer.append(addCouponButton, removeCouponButton);
+
+  couponCard.append(couponNameHeading, couponDescription, buttonsContainer);
+
+  couponsContainer.append(couponCard);
+});
+
+//enable apply coupon
+applyCouponButton.addEventListener('click', (event) => {
+  applyCouponContainer.classList.remove('hidden');
+});
+
+//disable apply coupon
+closeApplyCouponButton.addEventListener('click', () => {
+  applyCouponContainer.classList.add('hidden');
+});

@@ -61,10 +61,19 @@
         </div>
         <div id="place-order">
             <div>
-                <h4>Coupons</h4>
                 <div id="applyCoupon">
                     <h4>Apply Coupons</h4>
-                    <button>apply</button>
+                    <button>Apply</button>
+                </div>
+                <div id="coupons-container" class="hidden">
+                    <div>
+                        <h5>Applied Coupon</h5>
+                        <input type="text" id="applied-coupon" placeholder="NO COUPON SELECTED" disabled/>
+                        <button id="close-apply-coupon" style="font-size : larger">X</button>
+                    </div>
+                    <div>
+                        <!-- coupons come here -->
+                    </div>
                 </div>
             </div>
             <div>
@@ -86,6 +95,8 @@
                     <span class="pd-right" id="totalDiscount">100</span>
                     <span id="socialWorkDonationHeading" class="hidden">Social Work Donation</span>
                     <span class="pd-right hidden" id="socialWorkDonation">100</span>
+                    <span id="couponDiscountHeading" class="hidden">Coupon Discount</span>
+                    <span class="pd-right hidden" id="couponDiscount">100</span>
                 </div>
                 <div id="total-amount">
                     <h4>Total Amount</h4>
