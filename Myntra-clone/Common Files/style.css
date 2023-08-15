@@ -22,6 +22,11 @@ body img{
     margin: 0;
 }
 
+*{
+    font-family: WhitneySSm,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+         /* text-align: center; */
+}
+
 /* Menu bar */
 header{
     width: 100%;
@@ -294,8 +299,9 @@ header >* {
    margin-top: 8rem;
    margin-left: 4rem;
     display: flex;
-    align-items: center;
-    text-align: center;
+    justify-content: center;
+    /* align-items: center; */
+    /* text-align: center; */
     color: #5b6da8;
   }
  
