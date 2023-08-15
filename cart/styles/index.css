@@ -84,6 +84,7 @@ button:hover{
     gap : 1em;
     height : 10em;
     padding : 1em;
+    border-radius : 0.3em;
 }
 
 .item-card > img{
@@ -307,4 +308,37 @@ button:hover{
     border : 1px solid rgb(192, 188, 188);
     text-align : center;
     border-radius : 0.5em;
+}
+
+@media screen and (min-width : 701px) and (max-width : 870px){
+    #support-buttons{
+        gap : 0;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (min-width : 451px) and (max-width : 700px){
+  #container{
+    flex-direction: column;
+  }
+
+  #manage-item{
+    width : 100%;
+    border-right : none;
+    border-bottom : 1px solid rgb(192, 188, 188);
+  }
+
+  #items{
+    height : 25em;
+    overflow-y: scroll;
+  }
+
+  #place-order{
+    width : 60%;
+    margin : auto;
+  }
+
+  #support-buttons{
+    gap : 2em;
+  }
 }

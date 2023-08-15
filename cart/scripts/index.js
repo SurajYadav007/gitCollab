@@ -109,17 +109,24 @@ wearableItems.forEach((item) => {
   //have to get the quantity form local storage in-order to show correct data.
   itemQuantity.value = quantity;
   itemQuantity.addEventListener('change', (event) => {
-    orderPricingDetails =
-      JSON.parse(localStorage.getItem('order-pricing-details')) || {};
-    orderPricingDetails.totalMRP +=
-      selling_cost * event.target.value - selling_cost * quantity;
-    orderPricingDetails.totalAmt += cost * event.target.value - cost * quantity;
-    localStorage.setItem(
-      'order-pricing-details',
-      JSON.stringify(orderPricingDetails)
-    );
-    updatePricingDetails();
-    item.quantity = event.target.value;
+    //find the item in local storage
+    wearableItems = JSON.parse(localStorage.getItem('cart-items')) || [];
+    wearableItems.forEach((i) => {
+      if (i.name === name && i.brand === brand) {
+        var prevQuantity = i.quantity;
+        i.quantity = event.target.value;
+        orderPricingDetails =
+          JSON.parse(localStorage.getItem('order-pricing-details')) || {};
+        orderPricingDetails.totalMRP +=
+          selling_cost * (i.quantity - prevQuantity);
+        orderPricingDetails.totalAmt += cost * (i.quantity - prevQuantity);
+        localStorage.setItem(
+          'order-pricing-details',
+          JSON.stringify(orderPricingDetails)
+        );
+        updatePricingDetails();
+      }
+    });
     localStorage.setItem('cart-items', JSON.stringify(wearableItems));
   });
 
@@ -155,9 +162,24 @@ wearableItems.forEach((item) => {
   removeBtn.classList.add('remove-button');
   removeBtn.addEventListener('click', (event) => {
     event.target.parentNode.remove();
-    totalAmt -= cost;
-    totalMRP -= selling_cost;
-    updatePricingDetails();
+    wearableItems = JSON.parse(localStorage.getItem('cart-items')) || [];
+    wearableItems.forEach((i) => {
+      if (i.name === name && i.brand === brand) {
+        orderPricingDetails =
+          JSON.parse(localStorage.getItem('order-pricing-details')) || {};
+        orderPricingDetails.totalMRP -= selling_cost * i.quantity;
+        orderPricingDetails.totalAmt -= cost * i.quantity;
+        localStorage.setItem(
+          'order-pricing-details',
+          JSON.stringify(orderPricingDetails)
+        );
+        updatePricingDetails();
+      }
+    });
+    wearableItems = wearableItems.filter(
+      (i) => i.name !== name && i.brand !== brand
+    );
+    localStorage.setItem('cart-items', JSON.stringify(wearableItems));
   });
 
   itemInfo.append(itemName, itemBrand, sizeAndQuantity, pricingDetails);
@@ -195,17 +217,6 @@ collapseBtn.addEventListener('click', (event) => {
 
 //pacing orde3r
 placeButton.addEventListener('click', (event) => {
-  orderPricingDetails = {
-    totalMRP,
-    discount: totalMRP - totalAmt,
-    totalAmt,
-    couponDiscount,
-    supportUsAmount,
-  };
-  localStorage.setItem(
-    'order-pricing-details',
-    JSON.stringify(orderPricingDetails)
-  );
   window.location.href = './address.html';
 });
 
