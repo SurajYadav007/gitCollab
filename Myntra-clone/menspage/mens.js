@@ -1,5 +1,5 @@
 var productData = [{
-    image_url: "https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/2275365/2022/11/22/a3af8a2f-a385-4box7-bf7b-e34e0925fe0d1669105782439-Roadster-Men-White--Pure-Cotton-T-shirt-7301669105781913-1.jpg",
+    image_url: "https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/2275365/2022/11/22/a3af8a2f-a385-4cb7-bf7b-e34e0925fe0d1669105782439-Roadster-Men-White--Pure-Cotton-T-shirt-7301669105781913-1.jpg",
     brand: "Roadster",
     para: "Men White Pure Cotton T-shirt",
     price: "Rs. 284",
@@ -40,9 +40,9 @@ var productData = [{
     offer: "(40% OFF)",
     atc: "Add to Bag",
     atw: "Add to Whishlist",
-    category: "Tshirts",
+    category: "top",
 }, {
-    image_url: "https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/10381447/2022/4/18/ecd777c3-d057-420f-9a09-b3a0daa69cf21650284975539CampusSutraMenBlackGreyColouradioboxlockedHoodedSweatshirt1.jpg",
+    image_url: "https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/10381447/2022/4/18/ecd777c3-d057-420f-9a09-b3a0daa69cf21650284975539CampusSutraMenBlackGreyColourblockedHoodedSweatshirt1.jpg",
     brand: "Campus Sutra",
     para: "Men Black & Grey Colouradioboxlocked Hooded Sweatshirt",
     price: "Rs. 728",
@@ -112,7 +112,7 @@ var productData = [{
     atw: "Add to Whishlist",
     category: "top",
 }, {
-    image_url: "https://assets.myntassets.com/dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/23262422/2023/5/18/ebox8cc2f-0boxb-476c-b6f9-51aed1c20e3e1684426637824SportsShoes1.jpg",
+    image_url: "https://shoecommerce.in/wp-content/uploads/2023/07/ba5896b5-1f89-410b-93d5-70d6be55bd411687336002837HRXbyHrithikRoshanMenWhiteMeshRunningNon-MarkingShoes1.jpg",
     brand: "HRX by Hrithik Roshan",
     para: "Men Memory Foam Mesh Non-Marking Running Shoes",
     price: "Rs. 1999 ",
@@ -322,7 +322,7 @@ var productData = [{
     atw: "Add to Whishlist",
     category: "top",
 }, {
-    image_url: "https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/2151783/2017/12/17/11513489635756-US-Polo-Assn-Men-Navy-Blue-Colouradioboxlocked-Polo-Collar-T-shirt-3911513489635657-1.jpg ",
+    image_url: "https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/2378395/2018/3/3/11520054034100-Moda-Rapido-Men-Tshirts-5471520054033952-1.jpg",
     brand: "U.S. Polo Assn.",
     para: "Printed Polo Collar Pure Cotton T-Shirt ",
     price: "Rs. 1259 ",
@@ -350,7 +350,7 @@ var productData = [{
     atw: "Add to Whishlist",
     category: "top",
 }, {
-    image_url: "https://images.jdmagiboxox.com/quickquotes/images_main/us-polo-assn-graphic-print-crew-neck-t-shirt-blue-172008156-tw36h.jpg",
+    image_url: "https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/7546910/2019/1/24/41c936c1-c2d5-4109-831c-966f437582e81548322070143-HERENOW-Men-Tshirts-4721548322068176-1.jpg",
     brand: "U.S. Polo Assn.",
     para: "Printed Polo Collar Pure Cotton T-Shirt ",
     price: "Rs. 1259 ",
