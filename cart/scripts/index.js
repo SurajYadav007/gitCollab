@@ -1,137 +1,70 @@
-let wearableItems = [
-  {
-    type: 'top',
-    img1: 'https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/14197850/2021/6/5/363f66c6-cf69-4bef-bf65-d34b969d7b6e1622879758086USPoloAssnDenimCoMenMustardYellowBrandLogoPoloCollarT-shirt1.jpg',
-    price: 'Rs. 399',
-    cost: 399,
-    selling_cost: 999,
-    sellPrice: 'Rs. 999',
-    discount: '60% OFF',
-    ratings: '4.1',
-    reviews: '14.1k',
-    brand: 'usp',
-    name: 'Yellow Classic',
-    color: 'yellow',
-    quantity: 1,
-    size: 'M',
-  },
-  {
-    type: 'bottom',
-    img1: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwqnQUxYpr5N1iu9lHLLUYG3yuHKd8oy2t5w',
-    price: 'Rs. 499',
-    cost: 499,
-    selling_cost: 999,
-    sellPrice: 'Rs. 999',
-    discount: '52% OFF',
-    ratings: '4.3',
-    reviews: '1.1k',
-    name: 'Teal Texas',
-    color: 'green',
-    brand: 'nike',
-    quantity: 1,
-    size: '7.5',
-  },
-  {
-    type: 'top',
-    img1: 'https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/10941384/2020/2/13/9447a845-892a-49f5-91ee-4de8a6589a541581587257528-Roadster-Men-Tshirts-8221581587255142-1.jpg',
-    price: 'Rs. 599',
-    cost: 599,
-    selling_cost: 999,
-    sellPrice: 'Rs. 999',
-    discount: '52% OFF',
-    ratings: '4.3',
-    reviews: '241',
-    name: 'Black Diamond',
-    color: 'black',
-    brand: 'adidas',
-    quantity: 1,
-    size: 'M',
-  },
-  {
-    type: 'top',
-    img1: 'https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/16343396/2022/2/10/c5f6d701-a12f-41de-b751-2a318a0c20ba1644489749463-Levis-Men-Tshirts-9081644489748776-1.jpg',
-    price: 'Rs. 843',
-    cost: 843,
-    selling_cost: 1284,
-    sellPrice: 'Rs. 1284',
-    discount: '32% OFF',
-    ratings: '4.6',
-    reviews: '12k',
-    name: 'Volcanic Red',
-    color: 'red',
-    brand: 'puma',
-    quantity: 1,
-    size: 'M',
-  },
-  {
-    type: 'top',
-    img1: 'https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/12318240/2021/2/27/b7f27330-eb9b-4cd8-9d2d-64239c4a5adb1614428943368-Calvin-Klein-Jeans-Men-Tshirts-2101614428942578-1.jpg',
-    price: 'Rs. 843',
-    selling_cost: 872,
-    sellPrice: 'Rs. 872',
-    cost: 872,
-    discount: '15% OFF',
-    ratings: '4.5',
-    reviews: '3k',
-    name: 'Creamy Simpson',
-    color: 'yellow',
-    brand: 'tantra',
-    quantity: 1,
-    size: 'M',
-  },
-  {
-    type: 'top',
-    img1: 'https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/13345216/2021/2/25/ef8f64d1-0875-48dc-b664-bf560f9debb21614246856152-Mast--Harbour-Men-White-Printed-Round-Neck-T-shirt-339161424-1.jpg',
-    price: 'Rs. 1139',
-    cost: 1139,
-    selling_cost: 1874,
-    sellPrice: 'Rs. 1874',
-    discount: '47% OFF',
-    ratings: '4.5',
-    reviews: '5.2k',
-    name: 'Inspire Edition',
-    brand: 'tantra',
-    quantity: 1,
-    size: 'M',
-  },
-];
-let totalSellingPrice = 0;
-let totalPrice = 0;
+var wearableItems = JSON.parse(localStorage.getItem('cart-items')) || [];
+localStorage.setItem('cart-items', JSON.stringify(wearableItems));
+const couponsList = JSON.parse(localStorage.getItem('coupons-list')) || [];
+var orderPricingDetails = {
+  totalMRP: 0,
+  discount: 0,
+  totalAmt: 0,
+  couponDiscount: 0,
+  supportUsAmount: 0,
+};
+var { totalMRP, discount, totalAmt, couponDiscount, supportUsAmount } =
+  orderPricingDetails;
 
+//getting  items form DOM
 const items = document.querySelector('#items');
 const collapseBtn = document.querySelector('#collapse-button');
-const totalMRP = document.querySelector('#totalMRP');
+const totalMRPAmount = document.querySelector('#totalMRP');
 const totalDiscount = document.querySelector('#totalDiscount');
 const totalAmount = document.querySelector('#total-amount > h4:last-child');
 const placeButton = document.querySelector('#place-button');
+const deliveryCheckBtn = document.querySelector('#delivery-check-button');
+const checkDeliveryForm = document.querySelector('#check-delivery');
+const deliveryFormCloseBtn = document.querySelector('.close-button');
+const supportButtonsContainer = document.querySelector('#support-buttons');
+const supportToggleCheckBox = document.querySelector('#support-toggle');
+const socialWorkDonation = document.querySelector('#socialWorkDonation');
+const socialWorkDonationHeading = document.querySelector(
+  '#socialWorkDonationHeading'
+);
+const couponsContainer = document.querySelector(
+  '#coupons-container > div:last-child'
+);
+const couponDiscountHeading = document.querySelector('#couponDiscountHeading');
+const couponDiscountSpan = document.querySelector('#couponDiscount');
+const appliedCouponField = document.querySelector('#applied-coupon');
+const applyCouponButton = document.querySelector('#applyCoupon > button');
+const applyCouponContainer = document.querySelector('#coupons-container');
+const closeApplyCouponButton = document.querySelector('#close-apply-coupon');
 
+//  displaying items on cart
 wearableItems.forEach((item) => {
   const {
-    type,
-    img1,
-    cost,
-    selling_cost,
-    discount,
-    name,
+    category,
+    image_url,
+    selling_price,
+    offer,
+    para,
     brand,
     quantity,
     size,
+    rs,
   } = item;
 
-  totalPrice += cost;
-  totalSellingPrice += selling_cost;
+  totalAmt += rs * quantity;
+  totalMRP += selling_price * quantity;
 
   const card = document.createElement('div');
   card.classList.add('item-card');
 
   const img = document.createElement('img');
-  img.setAttribute('src', img1);
+  img.setAttribute('src', image_url);
   img.setAttribute('alt', brand);
 
   const itemInfo = document.createElement('div');
 
-  const itemName = document.createElement('h4');
-  itemName.textContent = name;
+  const itemPara = document.createElement('p');
+  itemPara.textContent = para;
 
   const itemBrand = document.createElement('h5');
   itemBrand.textContent = brand;
@@ -145,7 +78,7 @@ wearableItems.forEach((item) => {
   const itemSize = document.createElement('select');
 
   const sizes =
-    type === 'top'
+    category === 'top'
       ? ['S', 'M', 'L', 'XL', 'XXL', '3XL', '4XL', '5XL']
       : [6.5, 7.5, 8.5, 9.5, 10.5, 11.5, 12.5];
 
@@ -159,7 +92,7 @@ wearableItems.forEach((item) => {
   itemSize.value = size;
   itemSize.addEventListener('change', (event) => {
     item.size = event.target.value;
-    console.log(item);
+    localStorage.setItem('cart-items', JSON.stringify(wearableItems));
   });
 
   const quantitySpan = document.createElement('h5');
@@ -174,10 +107,28 @@ wearableItems.forEach((item) => {
     itemQuantity.append(option);
   }
 
+  //have to get the quantity form local storage in-order to show correct data.
   itemQuantity.value = quantity;
   itemQuantity.addEventListener('change', (event) => {
-    item.quantity = event.target.value;
-    console.log(item);
+    //find the item in local storage
+    wearableItems = JSON.parse(localStorage.getItem('cart-items')) || [];
+    wearableItems.forEach((i) => {
+      if (i.para === para && i.brand === brand) {
+        var prevQuantity = i.quantity;
+        i.quantity = event.target.value;
+        orderPricingDetails =
+          JSON.parse(localStorage.getItem('order-pricing-details')) || {};
+        orderPricingDetails.totalMRP +=
+          selling_price * (i.quantity - prevQuantity);
+        orderPricingDetails.totalAmt += rs * (i.quantity - prevQuantity);
+        localStorage.setItem(
+          'order-pricing-details',
+          JSON.stringify(orderPricingDetails)
+        );
+        updatePricingDetails();
+      }
+    });
+    localStorage.setItem('cart-items', JSON.stringify(wearableItems));
   });
 
   const sizeContainer = document.createElement('div');
@@ -194,39 +145,65 @@ wearableItems.forEach((item) => {
   pricingDetails.classList.add('pricing-details');
 
   const itemPrice = document.createElement('h4');
-  itemPrice.textContent = `₹${cost}`;
+  itemPrice.textContent = `₹${rs}`;
 
   const itemSellingPrice = document.createElement('h4');
-  itemSellingPrice.textContent = `₹${selling_cost}`;
+  itemSellingPrice.textContent = `₹${selling_price}`;
   itemSellingPrice.classList.add('strike-off');
 
   const itemDiscount = document.createElement('h4');
-  itemDiscount.textContent = discount;
+  itemDiscount.textContent = offer;
   itemDiscount.classList.add('discount');
 
   pricingDetails.append(itemPrice, itemSellingPrice, itemDiscount);
 
+  //removing item form cart
   const removeBtn = document.createElement('button');
   removeBtn.textContent = 'X';
   removeBtn.classList.add('remove-button');
   removeBtn.addEventListener('click', (event) => {
     event.target.parentNode.remove();
-    totalPrice -= cost;
-    totalSellingPrice -= selling_cost;
-    totalMRP.textContent = totalSellingPrice;
-    totalDiscount.textContent = `-${totalSellingPrice - totalPrice}`;
-    totalAmount.textContent = totalPrice;
+    wearableItems = JSON.parse(localStorage.getItem('cart-items')) || [];
+    wearableItems.forEach((i) => {
+      if (i.para === para && i.brand === brand) {
+        orderPricingDetails =
+          JSON.parse(localStorage.getItem('order-pricing-details')) || {};
+        orderPricingDetails.totalMRP -= selling_price * i.quantity;
+        orderPricingDetails.totalAmt -= rs * i.quantity;
+        localStorage.setItem(
+          'order-pricing-details',
+          JSON.stringify(orderPricingDetails)
+        );
+        updatePricingDetails();
+      }
+    });
+    wearableItems = wearableItems.filter(
+      (i) => i.para !== para && i.brand !== brand
+    );
+    localStorage.setItem('cart-items', JSON.stringify(wearableItems));
   });
 
-  itemInfo.append(itemName, itemBrand, sizeAndQuantity, pricingDetails);
+  itemInfo.append(itemBrand, itemPara, sizeAndQuantity, pricingDetails);
   card.append(img, itemInfo, removeBtn);
   items.append(card);
 });
 
-totalMRP.textContent = totalSellingPrice;
-totalDiscount.textContent = `-${totalSellingPrice - totalPrice}`;
-totalAmount.textContent = totalPrice;
+//review this  during integeration
+orderPricingDetails = {
+  totalMRP,
+  discount: totalMRP - totalAmt,
+  totalAmt,
+  couponDiscount,
+  supportUsAmount,
+};
+localStorage.setItem(
+  'order-pricing-details',
+  JSON.stringify(orderPricingDetails)
+);
 
+updatePricingDetails();
+
+//offers
 collapseBtn.addEventListener('click', (event) => {
   const type = event.target.textContent;
   const collpaseItem = document.querySelector('.collapse');
@@ -239,16 +216,146 @@ collapseBtn.addEventListener('click', (event) => {
   }
 });
 
+//pacing orde3r
 placeButton.addEventListener('click', (event) => {
-  const orderPricingDetails = {
-    totalMRP: totalSellingPrice,
-    discount: totalSellingPrice - totalPrice,
-    totalAmount: totalPrice,
-  };
+  window.location.href = './address.html';
+});
 
+deliveryCheckBtn.addEventListener('click', (event) => {
+  checkDeliveryForm.style.display = 'flex';
+});
+
+deliveryFormCloseBtn.addEventListener('click', (event) => {
+  checkDeliveryForm.style.display = 'none';
+});
+
+checkDeliveryForm.addEventListener('submit', (event) => {
+  event.preventDefault();
+  checkDeliveryForm.style.display = 'none';
+  checkDeliveryForm.pincode.value = '';
+  alert('Delivery Available!');
+});
+
+//suport US
+supportButtonsContainer.addEventListener('click', ({ target }) => {
+  if (target.localName === 'button') {
+    supportToggleCheckBox.checked = true;
+    orderPricingDetails =
+      JSON.parse(localStorage.getItem('order-pricing-details')) || {};
+    orderPricingDetails.supportUsAmount = +target.textContent.slice(1);
+    console.log(orderPricingDetails);
+    localStorage.setItem(
+      'order-pricing-details',
+      JSON.stringify(orderPricingDetails)
+    );
+    updatePricingDetails();
+    socialWorkDonation.classList.remove('hidden');
+    socialWorkDonationHeading.classList.remove('hidden');
+  }
+});
+
+supportToggleCheckBox.addEventListener('change', (event) => {
+  socialWorkDonation.classList.add('hidden');
+  socialWorkDonationHeading.classList.add('hidden');
+  orderPricingDetails =
+    JSON.parse(localStorage.getItem('order-pricing-details')) || {};
+  orderPricingDetails.supportUsAmount = 0;
   localStorage.setItem(
     'order-pricing-details',
     JSON.stringify(orderPricingDetails)
   );
-  window.location.href = './address.html';
+  updatePricingDetails();
+  localStorage.setItem(
+    'order-pricing-details',
+    JSON.stringify(orderPricingDetails)
+  );
+});
+
+function updatePricingDetails() {
+  orderPricingDetails =
+    JSON.parse(localStorage.getItem('order-pricing-details')) || {};
+
+  totalMRPAmount.textContent = orderPricingDetails.totalMRP;
+  totalDiscount.textContent = `-${
+    orderPricingDetails.totalMRP - orderPricingDetails.totalAmt
+  }`;
+  totalAmount.textContent =
+    orderPricingDetails.totalAmt +
+    orderPricingDetails.supportUsAmount -
+    orderPricingDetails.couponDiscount;
+  socialWorkDonation.textContent = orderPricingDetails.supportUsAmount;
+  couponDiscountSpan.textContent = `-${orderPricingDetails.couponDiscount}`;
+}
+
+//adding coupons
+couponsList.forEach((coupon) => {
+  const { couponName, discount, minValue } = coupon;
+
+  const couponCard = document.createElement('div');
+  couponCard.classList.add('coupon-card');
+
+  const couponNameHeading = document.createElement('h5');
+  couponNameHeading.textContent = couponName;
+
+  const couponDescription = document.createElement('p');
+  couponDescription.textContent = `Apply ${couponName} to get ₹${discount} off on an order above ₹${minValue}`;
+
+  const buttonsContainer = document.createElement('div');
+
+  const addCouponButton = document.createElement('button');
+  addCouponButton.textContent = 'ADD';
+  addCouponButton.addEventListener('click', (event) => {
+    orderPricingDetails =
+      JSON.parse(localStorage.getItem('order-pricing-details')) || {};
+    if (orderPricingDetails.totalAmt < minValue) {
+      alert(
+        `Coupon can only be applied to a minimum total Amount of ${minValue}`
+      );
+    } else if (orderPricingDetails.couponDiscount > 0) {
+      alert('A coupon is already applied');
+    } else {
+      appliedCouponField.value = couponName;
+      orderPricingDetails.couponDiscount = discount;
+      localStorage.setItem(
+        'order-pricing-details',
+        JSON.stringify(orderPricingDetails)
+      );
+      updatePricingDetails();
+      couponDiscountSpan.classList.remove('hidden');
+      couponDiscountHeading.classList.remove('hidden');
+    }
+  });
+
+  const removeCouponButton = document.createElement('button');
+  removeCouponButton.textContent = 'REMOVE';
+  removeCouponButton.addEventListener('click', (event) => {
+    appliedCouponField.value = '';
+    orderPricingDetails =
+      JSON.parse(localStorage.getItem('order-pricing-details')) || {};
+
+    orderPricingDetails.couponDiscount = 0;
+    localStorage.setItem(
+      'order-pricing-details',
+      JSON.stringify(orderPricingDetails)
+    );
+    updatePricingDetails();
+    couponDiscountSpan.classList.add('hidden');
+    couponDiscountHeading.classList.add('hidden');
+  });
+
+  buttonsContainer.append(addCouponButton, removeCouponButton);
+
+  couponCard.append(couponNameHeading, couponDescription, buttonsContainer);
+
+  couponsContainer.append(couponCard);
+});
+
+//enable apply coupon
+applyCouponButton.addEventListener('click', (event) => {
+  applyCouponContainer.classList.remove('hidden');
+});
+
+//disable apply coupon
+closeApplyCouponButton.addEventListener('click', () => {
+  applyCouponContainer.classList.add('hidden');
 });
