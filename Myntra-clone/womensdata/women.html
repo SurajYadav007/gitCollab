@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Women Products</title>
+    <link rel="shortcut icon" type="image/png" href="../Common Files/image/favicon.png">
+    <script src="https://kit.fontawesome.com/24c494a6b6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../womensdata/style&js/womestyle.css">
+    <link rel="stylesheet" href="../Common Files/style.css">
+    <script src="https://kit.fontawesome.com/24c494a6b6.js" crossorigin="anonymous"></script>
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+
+<body>
+    <header>
+        <div id="logo">
+            <img src="../Common Files/image/myntra-removebg-preview.png" alt="" id="land">
+        </div>
+        <ul id="nav_bar">
+            <li><a href="../Homepages/menHomePage.html">men</a></li>
+            <li><a href="../Homepages/womenHomePage.html">women</a></li>
+            <li><a href="#">kids</a></li>
+            <li><a href="../Homepages/homeLiving.html">home & living</a></li>
+            <li><a href="#">beauty</a></li>
+            <li id="studio"><a href="#">studio</a><span>new</span></li>
+        </ul>
+        <div id="search">
+            <input type="text" id="search_bar" placeholder="Search for products, brands and more">
+            <i class="fa-solid fa-magnifying-glass" id="search_icon"></i>
+        </div>
+        <div id="right_icon">
+            <div id="Dropdown">
+                <div id="drop">
+                    <a href="../Profile/profile.html" class="dropList">login</a>
+                    <a href="../Profile/signup.html" class="dropList">sign up</a>
+                </div>
+                <i class="fa-regular fa-user"></i>
+                <span>profile</span>
+            </div>
+            <div>
+                <i class="fa-regular fa-heart fa_wishlist"></i>
+                <span>wishlist</span>
+            </div>
+            <div>
+                <i class="fa-solid fa-bag-shopping"></i>
+                <span>bag</span>
+            </div>
+        </div>
+
+        <div id="toggle">
+            <i class='bx bx-menu dropbtn' onclick="myFunction()"></i>
+            <div id="myDropdown" class="dropdown-content">
+                <div class="top">
+                    <a href="../Homepages/menHomePage.html">men</a>
+                    <a href="../Homepages/womenHomePage.html">women</a>
+                    <a href="#">kids</a>
+                    <a href="../Homepages/homeLiving.html">home & living</a>
+                    <a href="#">beauty</a>
+                    <a href="#">studio</a>
+                </div>
+                <div class="bottom">
+                    <i class="fa-regular fa-user fa_user" id="profile"></i>
+                    <i class="fa-regular fa-heart fa_wishlist"></i>
+                    <i class="fa-solid fa-bag-shopping fa_cart"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div id="sorting">
+
+        <select class="filter" id="brandFilter">
+            <option id="normal" value="all">FILTER BY BRAND</option>
+            <option value="Roadster">Roadster</option>
+            <option value="Anouk">Anouk</option>
+            <option value="KALINI">KALINI</option>
+            <option value="Libas">Libas</option>
+            <option value="Nayo">Nayo</option>
+            <option value="High Star">High Star</option>
+            <option value="H&M">H&M</option>
+            <option value="Fossil">Fossil</option>
+            <option value="Minuttae">Minuttae</option>
+           
+          </select>
+
+        <select class="filter" id="priceSort">
+            <option value="sort">SORT BY PRICE</option>
+            <option value="low">Low to High</option>
+            <option value="high">High to Low</option>
+          </select>
+
+        <select class="filter" id="nameSort">
+            <option value="sort">SORT BY NAME</option>
+            <option value="asc">Ascending</option>
+            <option value="dsc">Descending</option>
+          </select>
+
+    </div>
+
+
+    <div id="wrapper">
+        <div id="filter">
+            <div class="a">
+                <h3>FILTERS </h3>
+                <div>
+                    <input type="checkbox" id="radiobox" name="all">
+                    <label for="radiobox">Men</label><br>
+                    <input type="checkbox" id="radiobox" name="all">
+                    <label for="radiobox">Women</label><br>
+                    <input type="checkbox" id="radiobox" name="all">
+                    <label for="checkbox">Boys</label><br>
+                    <input type="checkbox" id="radiobox" name="all">
+                    <label for="checkbox">Girls</label>
+                </div>
+
+            </div>
+            <div class="b">
+                <h3>CATEGORIES</h3>
+                <div>
+                    <input type="checkbox" id="box" name="all">
+                    <label for="box">Saree</label><br>
+                    <input type="checkbox" id="box" name="all">
+                    <label for="box">Dress</label><br>
+                    <input type="checkbox" id="box" name="all">
+                    <label for="box">Co-set</label><br>
+                    <input type="checkbox" id="box" name="all">
+                    <label for="box">Bracelet</label><br>
+                    <input type="checkbox" id="box" name="all">
+                    <label for="box">Purse</label><br>
+                    <input type="checkbox" id="box" name="all">
+                    <label for="box">Kurtas</label><br>
+                    <input type="checkbox" id="box" name="all">
+                    <label for="box">Jeans</label><br>
+                    <input type="checkbox" id="box" name="all">
+                    <label for="box">Footware</label>
+                </div>
+
+            </div>
+            <div class="b">
+                <h3>BRAND</h3>
+                <div>
+                    <input type="checkbox" id="box" name="all">
+                    <label for="box">Roadster</label><br>
+                    <input type="checkbox" id="box" name="all">
+                    <label for="box">Anouk</label><br>
+                    <input type="checkbox" id="box" name="all">
+                    <label for="box">KALINI</label><br>
+                    <input type="checkbox" id="box" name="all">
+                    <label for="box">Libas</label><br>
+                    <input type="checkbox" id="box" name="all">
+                    <label for="box">Nayo</label><br>
+                    <input type="checkbox" id="box" name="all">
+                    <label for="box">High Star</label><br>
+                    <input type="checkbox" id="box" name="all">
+                    <label for="box">H&M</label><br>
+                    <input type="checkbox" id="box" name="all">
+                    <label for="box">Fossil</label>
+                    
+                </div>
+
+            </div>
+            <div class="b">
+                <h3>PRICE</h3>
+                <div>
+                    <input type="checkbox" id="box" name="all">
+                    <label for="box">Rs. 179 to Rs. 12385</label><br>
+                    <input type="checkbox" id="box" name="all">
+                    <label for="box">Rs. 12385 to Rs. 24591</label><br>
+                    <input type="checkbox" id="box" name="all">
+                    <label for="box">Rs. 24591 to Rs. 36797</label><br>
+                    <input type="checkbox" id="box" name="all">
+                    <label for="box">Rs. 36797 to Rs. 49003</label><br>
+                </div>
+
+            </div>
+            <div class="b">
+                <h3>COLOR</h3>
+                <div>
+                    <input type="checkbox" id="box" name="all">
+                    <label for="box"><strong id="blue"></strong>Blue</label><br>
+                    <input type="checkbox" id="box" name="all">
+                    <label for="box"><strong id="red"></strong>Red</label><br>
+                    <input type="checkbox" id="box" name="all">
+                    <label for="box"><strong id="brown"></strong>Brown</label><br>
+                    <input type="checkbox" id="box" name="all">
+                    <label for="box"><strong id="pink"></strong>Pink</label><br>
+                    <input type="checkbox" id="box" name="all">
+                    <label for="box"><strong id="black"></strong>Black</label><br>
+                    <input type="checkbox" id="box" name="all">
+                    <label for="box"><strong id="gray"></strong>Gray</label><br>
+                    <input type="checkbox" id="box" name="all">
+                    <label for="box"><strong id="green"></strong>Green</label><br>
+                </div>
+
+            </div>
+            <div class="c">
+                <h3>DISCOUNT RANGE</h3>
+                <div>
+                    <input type="radio" id="radiobox" name="all">
+                    <label for="radiobox">10% and above</label><br>
+                    <input type="radio" id="radiobox" name="all">
+                    <label for="radiobox">20% and above</label><br>
+                    <input type="radio" id="radiobox" name="all">
+                    <label for="radiobox">30% and aboves</label><br>
+                    <input type="radio" id="radiobox" name="all">
+                    <label for="radiobox">40% and above</label><br>
+                    <input type="radio" id="radiobox" name="all">
+                    <label for="radiobox">50% and above</label><br>
+                    <input type="radio" id="radiobox" name="all">
+                    <label for="radiobox">60% and above</label><br>
+                    <input type="radio" id="radiobox" name="all">
+                    <label for="radiobox">70% and above</label><br>
+                    <input type="radio" id="radiobox" name="all">
+                    <label for="radiobox">80% and above</label><br>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="container"></div>
+    </div>
+
+    <footer>
+        <section id="section_1">
+            <div id="left">
+                <div>
+                    <h4>online shopping</h4>
+                    <p>men</p>
+                    <p>women</p>
+                    <p>home & living</p>
+                    <p>beauty</p>
+                    <p>gift cards</p>
+                    <p>myntra insider<span id="latest">New</span></p>
+                </div>
+                <div>
+                    <h4>useful links</h4>
+                    <p>men</p>
+                    <p>faq</p>
+                    <p>t&c</p>
+                    <p>terms of use</p>
+                    <p>track order</p>
+                    <p>shipping</p>
+                    <p>cancellation</p>
+                    <p>returns</p>
+                    <p>whitehat</p>
+                    <p>blog</p>
+                    <p>careers</p>
+                    <p>privacy policy</p>
+                    <p>site map</p>
+                    <p>corporate information</p>
+                </div>
+                <div>
+                    <h4>experience myntra app on mobile</h4>
+                    <img src="https://bit.ly/3LluZ4L" alt="android">
+                    <img src="https://bit.ly/3DmWQys" alt="ios">
+                    <h4 id="social_connect">keep in touch</h4>
+                    <div>
+                        <i class="fa-brands fa-facebook-square"></i>
+                        <i class="fa-brands fa-twitter-square"></i>
+                        <i class="fa-brands fa-youtube"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+                </div>
+            </div>
+            <div id="right">
+                <div>
+                    <img src="https://bit.ly/3JPiL47" alt="original">
+                    <p> <span>100% ORIGINAL</span> guarantee for all products at myntra.com</p>
+                </div>
+                <div>
+                    <img src="https://bit.ly/3uBalH4" alt="return_policy">
+                    <p><span>Return within 30days</span> of receiving your order</p>
+                </div>
+            </div>
+        </section>
+        <section id="section_2">
+            <h4>popular searches</h4>
+            <div></div>
+        </section>
+        <section id="section_3">
+            <a href="">Adidas</a><a href="">Arrow</a><a href="">Fila</a><a href="">Online Shopping</a><a href="">pepe jeans</a><a href="">Puma</a><a href="">United colours of benneton</a><a href="">Fastrack</a><a href="">Shorts</a><a href="">Being Human</a>
+            <a href="">Skirts</a>
+            <a href="">Woodland</a><a href="">Supra</a><a href="">Dresses</a><a href="">Clothing</a><a href="">Jewellery</a><a href="">T Shirts</a><a href="">Shoes</a><a href="">Bags</a><a href="">Watches</a><a href="">Caps</a><a href="">sherwani</a>
+            <a href="">Shirts</a><a href="">sherwani</a><a href="">Flip Flops</a><a href="">Kurtas</a><a href="">Skechers</a><a href="">Saree</a><a href="">shalwar</a><a href="">wranglesr Watches</a>
+        </section>
+        <section id="section_4">
+            <p>In case of any concern <a href="#"> contact us</a></p>
+            <p>&#169; 2022 www.myntra.com. All rights reserved.</p>
+        </section>
+    </footer>
+
+</body>
+
+</html>
+<script src="../womensdata/style&js/womens.js"></script>
+<script src="../Common Files/headerMenu.js"></script>
+<script src="../Common Files/hyperlinks.js"></script>
