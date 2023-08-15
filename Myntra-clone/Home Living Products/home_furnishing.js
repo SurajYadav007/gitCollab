@@ -2,8 +2,7 @@
 
 var funitureData = [
   {
-        image_url:
-          "https://bit.ly/36VAF6m",
+        image_url:"https://assets.myntassets.com/dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/18785522/2022/6/20/bab18284-f012-49f0-97ec-7ab0397a458e1655702594803Bedsheets1.jpg",
         brand: "DREAM WEAVERZ",
         para : "300 TC Cotton 1 King BedSheet",
         rs : 623,
@@ -14,10 +13,9 @@ var funitureData = [
         addToBag : "ADD TO BAG",
       },
       {
-        image_url:
-          "https://bit.ly/3wJgLGM",
-        brand: "KLOTTHE",
-        para : "Purple Geometric King Bedsheet",
+        image_url:"https://assets.myntassets.com/dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/17046590/2022/3/15/bc5cb2b6-9e25-43cc-88e8-b30fa5161c611647334345199HomeSizzlerGreyWhiteGeometric144TCSingleBedsheetwith1PillowC1.jpg",
+          brand: "DREAM WEAVERZ",
+          para : "Purple Geometric King Bedsheet",
         rs : 758,
         price: "Rs. 758",
         strikedoffprice: "Rs. 3299",
@@ -26,10 +24,9 @@ var funitureData = [
         addToBag : "ADD TO BAG",
       },
       {
-        image_url:
-          "https://bit.ly/3wR8oZJ",
-        brand: "SEJ By Nisha Gupta",
-        para : "White & Pink King Bedsheet",
+        image_url:"https://assets.myntassets.com/dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/15473570/2022/3/14/d3d2add1-12bb-48d2-9a9e-3d13657f4ef31647262022820HomeSizzlerGreyWhiteGraphic144TCQueenBedsheetwith2PillowCove1.jpg",
+        brand: "DREAM WEAVERZ",
+        para : "Panda King Bedsheet",
         rs : 759,
         price: "Rs. 759",
         strikedoffprice: "Rs. 1999",
@@ -38,10 +35,9 @@ var funitureData = [
         addToBag : "ADD TO BAG",
       },
       {
-        image_url:
-          "https://bit.ly/35khX87",
-        brand: "JAIPUR FABRIC",
-        para : "Pink 180TC Cotton Bedsheet",
+        image_url:"https://assets.myntassets.com/assets/images/15636356/2021/9/27/bac3598c-3172-4ff1-8236-8e26a952e3161632732543348BlanketsQuiltsandDohars1.jpg",
+        brand: "BIANCA ",
+        para : "Blue & Green Geometric Microfiber AC Room 120 GSM Double Bed Quilt",
         rs : 1199,
         price: "Rs. 1199",
         strikedoffprice: "Rs. 2599",
@@ -50,10 +46,9 @@ var funitureData = [
         addToBag : "ADD TO BAG",
       },
       {
-        image_url:
-          "https://bit.ly/3tOYYfr",
-        brand: "DREAM WEAVERZ",
-        para : "Sea Green & White Bedsheet",
+        image_url:"https://assets.myntassets.com/dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/19566688/2022/8/19/02133844-1a6f-482e-b443-82467192f7881660900998316StoryhomeUnisexCreamBlanketsQuiltsandDohars1.jpg",
+        brand: "BIANCA",
+        para : "Sea blue & White Bedsheet",
         rs : 879,
         price: "Rs. 879",
         strikedoffprice: "Rs. 2499",
@@ -62,10 +57,9 @@ var funitureData = [
         addToBag : "ADD TO BAG",
       },
       {
-        image_url:
-          "https://bit.ly/3NvN01V",
-        brand: "Puma",
-        para : "Unisex Green Solid Anti-Slip",
+        image_url:"https://assets.myntassets.com/dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/22829130/2023/4/20/af78a306-1d59-4d3a-a93e-204a6701040b1681964735555BlanketsQuiltsandDohars1.jpg",
+        brand: "BIANCA",
+        para : "Red & White Geometric Microfiber AC Room 120 GSM Double Bed Quilt",
         rs : 674,
         price: "Rs. 674",
         strikedoffprice: "Rs. 1499",
@@ -75,22 +69,22 @@ var funitureData = [
       },
       {
         image_url:
-          "https://bit.ly/3qKLDTt",
-        brand: "Arrabi",
-        para : "Beige & Blue Floral Bedsheet", 
-        rs : 998,
-        price: "Rs. 998",
-        strikedoffprice: "Rs. 3329",
-        offer : "(65% OFF)",
+          "https://assets.myntassets.com/dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/21837438/2023/2/4/f501f2ef-3e43-43a0-95d3-de9214da68241675487311488CorsicaClassicChenilleWovenCarpet-137x183cm1.jpg",
+        brand: "Home Centre",
+        para : "Corsica Classic Blue & Cream-Colored Printed Chenille Woven Rectangular Carpet", 
+        rs : 599,
+        price: "Rs. 599",
+        strikedoffprice: "Rs. 1999",
+        offer : "(50% OFF)",
         wishList : "WISHLIST",
         addToBag : "ADD TO BAG",
       },
       {
         image_url:
-          "https://bit.ly/3tOZvxX",
-        brand: "Home Ecstasy",
-        para : "300 TC Cotton 1 King BedSheet",
-        rs : 623,
+          "https://assets.myntassets.com/dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/17188954/2022/2/17/9c764a3d-5c5a-480a-b20c-a18a3b7f45e71645087028241Carpets1.jpg",
+          brand: "Home Centre",
+          para : "Corsica Classic Blue & Cream-Colored Printed Chenille Woven Rectangular Carpet", 
+          rs : 623,
         price: "Rs. 623",
         strikedoffprice: "Rs. 2599",
         offer : "(65% OFF)",
@@ -99,9 +93,9 @@ var funitureData = [
       },
       {
         image_url:
-          "https://bit.ly/3JSmSfw",
+          "https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/7511143/2021/11/19/4d332562-00fe-4573-8ed6-6fe429df06291637313584709DivineCasaWhiteBlackGeometricACRoom110GSMSingleBedDohar1.jpg",
         brand: "DREAM WEAVERZ",
-        para : "Peach-Coloured & Green cotton",
+        para : "White & Black Geometric AC Room 110 GSM Single Bed Dohar",
         rs : 805,
         price: "Rs. 805",
         strikedoffprice: "Rs. 1299",
@@ -111,9 +105,9 @@ var funitureData = [
       },
       {
         image_url:
-          "https://bit.ly/3NwqcPO",
-        brand: "ELEVANTO",
-        para : "Women Purple Solid Bath Robes",
+          "https://assets.myntassets.com/assets/images/20318768/2022/10/7/9675f474-8f6d-4a71-ac63-4dae6da5e0771665153743232ObsessionsPolypropyleneAnti-staticFloorRunner60x150cm_BlueMu1.jpg",
+        brand: "OBSESSIONS",
+        para : "Blue & Mustard Yellow Geometric Anti-Static Floor Runner",
         rs : 489,
         price: "Rs. 489",
         strikedoffprice: "Rs. 999",
@@ -123,9 +117,9 @@ var funitureData = [
       },
       {
         image_url:
-          "https://bit.ly/3Lqrha4",
-        brand: "LA VERNE",
-        para : "Set of 5 White Cushion Fillers",
+          "https://assets.myntassets.com/dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/16689906/2022/1/5/106ae06e-ef88-4b0f-9e66-640d2a80a9a11641362970474ObsessionsPolypropyleneMachineMadeBedsideRunner60x150cms_Tea1.jpg",
+        brand: "OBSESSIONS",
+        para : "Colorful Anti-Static Floor Runner",
         rs : 799,
         price: "Rs. 799",
         strikedoffprice: "Rs. 1199",
@@ -135,9 +129,9 @@ var funitureData = [
       },
       {
         image_url:
-          "https://bit.ly/3wN0jW4",
-        brand: "JAIPUR FABRIC",
-        para : "Green & White Printed Bedsheet",
+          "https://assets.myntassets.com/dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/productimage/2021/3/20/3298617b-618f-4e25-94d3-b536d9dedee61616225317488-1.jpg",
+        brand: "OBSESSIONS",
+        para : "Blue & White Printed Floor Runner",
         rs : 1199,
         price: "Rs. 1199",
         strikedoffprice: "Rs. 2599",
@@ -146,10 +140,9 @@ var funitureData = [
         addToBag : "ADD TO BAG",
       },
       {
-        image_url:
-          "https://bit.ly/3tOftZ9",
-        brand: "KLOTTHE",
-        para : "Multicoloured Cotton 1 King",
+        image_url:"https://assets.myntassets.com/assets/images/19555338/2022/8/18/19c0bc16-966d-409e-987a-21b5acca46d01660833145687HandTowels1.jpg",
+        brand: "Nautica",
+        para : "Set Of 6 Solid 600 GSM Pure Cotton Hand Towels Set",
         rs : 799,
         price: "Rs. 799",
         strikedoffprice: "Rs. 3999",
@@ -159,9 +152,9 @@ var funitureData = [
       },
       {
         image_url:
-          "https://bit.ly/3JRvCCK",
-        brand: "DREAM WEAVERZ",
-        para : "Pink & Blue Floral Bedsheet",
+          "https://assets.myntassets.com/dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/19555372/2022/8/19/415555f7-05a2-432f-9a3d-6207f2e82a181660881641375NAUTICAFluffyZeroTwist100CottonTowel-4pcHandTowelcrossviewso1.jpg",
+        brand: " Nautica",
+        para : "Set Of 2 Solid 600 GSM Pure Cotton Hand Towels Set",
         rs : 799,
         price: "Rs. 909",
         strikedoffprice: "Rs. 2599",
@@ -484,8 +477,8 @@ var funitureData = [
       }
     }
 
-    document.getElementById('brandFilter').addEventListener('change', filterBrand);
-    function filterBrand(){
+    document.getElementById('brandFilter').addEventListener('change', filteradioboxrand);
+    function filteradioboxrand(){
       var selected = document.getElementById('brandFilter').value
       var newArray = funitureData.filter(function(element){
           if(element.brand == selected){
@@ -587,7 +580,7 @@ localStorage.setItem("BagListObj" , JSON.stringify(bagList))
 
 // LANDING PAGE
 document.getElementById('landingPage').addEventListener('click', function(){
-window.location.href = "/LandingPage/index.html"
+window.location.href = "MainPage.html"
 })
 document.querySelector(".fa-heart").addEventListener("click",function(){
 window.location.href ="../wishlist/wishlist.html"

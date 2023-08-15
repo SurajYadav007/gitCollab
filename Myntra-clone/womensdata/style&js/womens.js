@@ -221,7 +221,7 @@ var womensData = [{
 {
     image_url: "https://assets.myntassets.com/dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/23210896/2023/7/4/2d9a3f4b-2102-47d7-8a44-324db043cf741688460368121-HERENOW-Women-Tshirts-2171688460366341-1.jpg",
     brand: "Roadster",
-    para: "Women Pure Cotton Relaxed Fit Colourblocked T-shirt",
+    para: "Women Pure Cotton Relaxed Fit Colouradioboxlocked T-shirt",
     rs: 1469,
     price: "Rs. 1469",
     strikedoffprice: "Rs. 2099",
@@ -285,7 +285,7 @@ var womensData = [{
     addToBag: "ADD TO BAG",
 },
 {
-    image_url: "https://assets.myntassets.com/dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/24371338/2023/8/7/8cb7d79a-6bf4-432b-8fbb-df5925092b221691382983086SparxWomenSportsShoes1.jpg",
+    image_url: "https://assets.myntassets.com/dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/24371338/2023/8/7/8box7d79a-6bf4-432b-8fbb-df5925092b221691382983086SparxWomenSportsShoes1.jpg",
     brand: "Sangria",
     para: "Women Mesh Running Marking Shoes",
     rs: 1238,
@@ -340,7 +340,7 @@ var womensData = [{
     addToBag: "ADD TO BAG",
 },
 {
-    image_url: "https://assets.myntassets.com/dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/21431358/2023/1/10/a15ad902-46b3-4df4-aebc-347a34cbcf821673340038771-Jewels-Galaxy-Women-5-Gold-Toned--White-Gold-Plated-Cuff-Bra-1.jpg",
+    image_url: "https://assets.myntassets.com/dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/21431358/2023/1/10/a15ad902-46b3-4df4-aebc-347a34boxcf821673340038771-Jewels-Galaxy-Women-5-Gold-Toned--White-Gold-Plated-Cuff-Bra-1.jpg",
     brand: "Minuttae",
     para: "Women 5 Gold-Toned & White Gold-Plated Cuff Bracelet",
     rs: 345,
@@ -362,7 +362,7 @@ var womensData = [{
     addToBag: "ADD TO BAG",
 },
 {
-    image_url: "https://assets.myntassets.com/dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/23486348/2023/5/31/2a367be1-faba-4ab3-8875-18059d0cc76a1685525594902Shoulderbagandpouch1.jpg",
+    image_url: "https://assets.myntassets.com/dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/23486348/2023/5/31/2a367be1-faba-4ab3-8875-18059d0cc76a1685525594902Shoulderadioboxagandpouch1.jpg",
     brand: "H&M",
     para: "Shoulder Bag and Pouch",
     rs:  1651,
@@ -373,9 +373,9 @@ var womensData = [{
     addToBag: "ADD TO BAG",
 },
 {
-    image_url: "https://images.fashiola.in/product-list/300x450/myntra/102374836/myntra-colourblocked-pu-laptop-bag.webp",
+    image_url: "https://images.fashiola.in/product-list/300x450/myntra/102374836/myntra-colouradioboxlocked-pu-laptop-bag.webp",
     brand: "H&M",
-    para: "Colourblocked PU Laptop Bag",
+    para: "Colouradioboxlocked PU Laptop Bag",
     rs: 1494,
     price: "Rs. 1494",
     strikedoffprice: "Rs. 4499",
@@ -445,8 +445,8 @@ window.addEventListener('load', function(){
       }
     }
 
-    document.getElementById('brandFilter').addEventListener('change', filterBrand);
-    function filterBrand(){
+    document.getElementById('brandFilter').addEventListener('change', filteradioboxrand);
+    function filteradioboxrand(){
       var selected = document.getElementById('brandFilter').value
       var newArray = womensData.filter(function(element){
           if(element.brand == selected){

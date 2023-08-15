@@ -36,14 +36,14 @@ brandsBag.map(function(element){
 // <------- SLIDER IMAGES -------> //
 var slideImages = [
   //FOR TABLET & DEKSTOP VIEW
-  [{img_url : "https://m.media-amazon.com/images/G/31/img23/Fashion/Event/JuneWRS/eventpage/N2GLoffer/welcomepc-V1._CB587586825_.gif"},
+  [{img_url : "https://m.media-amazon.com/images/G/31/img23/Fashion/Event/JuneWRS/eventpage/N2GLoffer/welcomepc-V1._box587586825_.gif"},
   {img_url : "https://m.media-amazon.com/images/G/31/img23/Fashion/postpd/headers/unrec-eng-pc._SX3000_QL85_.jpg"},
   {img_url : "https://m.media-amazon.com/images/G/31/img23/Fashion/Event/JuneWRS/eventpage/pc/CML/CML-4._SX3000_QL85_.jpg"},
   {img_url : "https://m.media-amazon.com/images/G/31/img23/Fashion/Event/JuneWRS/eventpage/pc/CML/CML-1._SX3000_QL85_.jpg"},
   ],
 
   //FOR MOBILE VIEW
-  [{img_url : "https://m.media-amazon.com/images/G/31/img23/Fashion/Event/JuneWRS/eventpage/N2GLoffer/welcomepc-V1._CB587586825_.gif"},
+  [{img_url : "https://m.media-amazon.com/images/G/31/img23/Fashion/Event/JuneWRS/eventpage/N2GLoffer/welcomepc-V1._box587586825_.gif"},
   {img_url : "https://m.media-amazon.com/images/G/31/img23/Fashion/postpd/headers/unrec-eng-pc._SX3000_QL85_.jpg"},
   {img_url : "https://m.media-amazon.com/images/G/31/img23/Fashion/Event/JuneWRS/eventpage/pc/CML/CML-4._SX3000_QL85_.jpg"},
   {img_url : "https://m.media-amazon.com/images/G/31/img23/Fashion/Event/JuneWRS/eventpage/pc/CML/CML-1._SX3000_QL85_.jpg"},

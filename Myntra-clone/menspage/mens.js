@@ -1,5 +1,5 @@
 var productData = [{
-    image_url: "https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/2275365/2022/11/22/a3af8a2f-a385-4cb7-bf7b-e34e0925fe0d1669105782439-Roadster-Men-White--Pure-Cotton-T-shirt-7301669105781913-1.jpg",
+    image_url: "https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/2275365/2022/11/22/a3af8a2f-a385-4box7-bf7b-e34e0925fe0d1669105782439-Roadster-Men-White--Pure-Cotton-T-shirt-7301669105781913-1.jpg",
     brand: "Roadster",
     para: "Men White Pure Cotton T-shirt",
     price: "Rs. 284",
@@ -33,9 +33,9 @@ var productData = [{
     atw: "Add to Whishlist",
     category: "Tshirts",
 }, {
-    image_url: "https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/10381447/2022/4/18/ecd777c3-d057-420f-9a09-b3a0daa69cf21650284975539CampusSutraMenBlackGreyColourblockedHoodedSweatshirt1.jpg",
+    image_url: "https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/10381447/2022/4/18/ecd777c3-d057-420f-9a09-b3a0daa69cf21650284975539CampusSutraMenBlackGreyColouradioboxlockedHoodedSweatshirt1.jpg",
     brand: "Campus Sutra",
-    para: "Men Black & Grey Colourblocked Hooded Sweatshirt",
+    para: "Men Black & Grey Colouradioboxlocked Hooded Sweatshirt",
     price: "Rs. 728",
     rs: 728,
     strikedoffprice: "Rs 1999 ",
@@ -88,7 +88,7 @@ var productData = [{
     atw: "Add to Whishlist",
     category: "top",
 }, {
-    image_url: "https://assets.myntassets.com/dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/23262422/2023/5/18/ecb8cc2f-0cbb-476c-b6f9-51aed1c20e3e1684426637824SportsShoes1.jpg",
+    image_url: "https://assets.myntassets.com/dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/23262422/2023/5/18/ebox8cc2f-0boxb-476c-b6f9-51aed1c20e3e1684426637824SportsShoes1.jpg",
     brand: "HRX by Hrithik Roshan",
     para: "Men Memory Foam Mesh Non-Marking Running Shoes",
     price: "Rs. 1999 ",
@@ -253,7 +253,7 @@ var productData = [{
     atw: "Add to Whishlist",
     category: "top",
 }, {
-    image_url: "https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/2151783/2017/12/17/11513489635756-US-Polo-Assn-Men-Navy-Blue-Colourblocked-Polo-Collar-T-shirt-3911513489635657-1.jpg ",
+    image_url: "https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/2151783/2017/12/17/11513489635756-US-Polo-Assn-Men-Navy-Blue-Colouradioboxlocked-Polo-Collar-T-shirt-3911513489635657-1.jpg ",
     brand: "U.S. Polo Assn.",
     para: "Printed Polo Collar Pure Cotton T-Shirt ",
     price: "Rs. 1259 ",
@@ -275,7 +275,7 @@ var productData = [{
     atw: "Add to Whishlist",
     category: "top",
 }, {
-    image_url: "https://images.jdmagicbox.com/quickquotes/images_main/us-polo-assn-graphic-print-crew-neck-t-shirt-blue-172008156-tw36h.jpg",
+    image_url: "https://images.jdmagiboxox.com/quickquotes/images_main/us-polo-assn-graphic-print-crew-neck-t-shirt-blue-172008156-tw36h.jpg",
     brand: "U.S. Polo Assn.",
     para: "Printed Polo Collar Pure Cotton T-Shirt ",
     price: "Rs. 1259 ",
@@ -319,7 +319,7 @@ var productData = [{
     atw: "Add to Whishlist",
     category: "top",
 }, {
-    image_url: "https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/8895359/2019/3/5/ab83a517-dc4c-4ffb-9e72-f173cbf6b0961551783007143-Louis-Philippe-Men-Blue-Self-Design-Slim-Fit-Single-Breasted-1.jpg",
+    image_url: "https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/8895359/2019/3/5/ab83a517-dc4c-4ffb-9e72-f173boxf6b0961551783007143-Louis-Philippe-Men-Blue-Self-Design-Slim-Fit-Single-Breasted-1.jpg",
     brand: "Louis Philippe",
     para: "Men Formal Slim-Fit Single-Breasted Suit",
     price: "Rs. 8799 ",
@@ -342,7 +342,7 @@ var productData = [{
     category: "top",
 }, 
 {
-    image_url: "https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/2151783/2017/12/17/11513489635756-US-Polo-Assn-Men-Navy-Blue-Colourblocked-Polo-Collar-T-shirt-3911513489635657-1.jpg ",
+    image_url: "https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/2151783/2017/12/17/11513489635756-US-Polo-Assn-Men-Navy-Blue-Colouradioboxlocked-Polo-Collar-T-shirt-3911513489635657-1.jpg ",
     brand: "U.S. Polo Assn.",
     para: "Printed Polo Collar Pure Cotton T-Shirt ",
     price: "Rs. 1259 ",
@@ -403,9 +403,9 @@ function sortPrice() {
     }
 }
 
-document.getElementById('brandFilter').addEventListener('change', filterBrand);
+document.getElementById('brandFilter').addEventListener('change', filteradioboxrand);
 
-function filterBrand() {
+function filteradioboxrand() {
     var selected = document.getElementById('brandFilter').value
     var newArray = productData.filter(function(element) {
         if (element.brand == selected) {
@@ -508,5 +508,5 @@ function addToBag(element) {
 }
 
 document.getElementById('landingPage').addEventListener('click', function() {
-window.location.href = "../Landingpage/index.html"
+window.location.href = "MainPage.html"
 }) 

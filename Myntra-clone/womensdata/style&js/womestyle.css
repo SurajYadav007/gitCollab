@@ -192,6 +192,42 @@ hr {
     color: #eeeeee;
 }
 
+/* color */
+span {
+    display: inline-block;
+    width: .8vw;
+    min-width: .4vw;
+    max-width: 1vw;
+     height: 2vh; 
+    min-height: .4vh;
+    max-height: 2vh; 
+    border-radius: 50%;
+    margin-right: .3rem;
+    background-color: violet;
+    
+    }
+    #blue {
+    background-color: blue;
+    }
+    #pink {
+        background-color: pink;
+        }
+    #black {
+        background-color: black;
+        }
+    #brown {
+            background-color: brown;
+            }    
+    #red {
+        background-color: red;
+        }
+    #gray {
+            background-color: gray;
+            }
+    #green {
+        background-color: greenyellow;
+        }
+
 footer h4 {
     text-transform: uppercase;
     color: #505050;
