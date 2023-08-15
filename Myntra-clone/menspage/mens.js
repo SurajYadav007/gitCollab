@@ -406,7 +406,7 @@ var productData = [{
     atw: "Add to Whishlist",
     category: "top",
 }, {
-    image_url: "https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/8895359/2019/3/5/ab83a517-dc4c-4ffb-9e72-f173boxf6b0961551783007143-Louis-Philippe-Men-Blue-Self-Design-Slim-Fit-Single-Breasted-1.jpg",
+    image_url: "https://m.media-amazon.com/images/I/71L5zNEos4L._AC_UY1100_.jpg",
     brand: "Louis Philippe",
     para: "Men Formal Slim-Fit Single-Breasted Suit",
     price: "Rs. 8799 ",
@@ -435,7 +435,7 @@ var productData = [{
     category: "top",
 }, 
 {
-    image_url: "https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/2151783/2017/12/17/11513489635756-US-Polo-Assn-Men-Navy-Blue-Colouradioboxlocked-Polo-Collar-T-shirt-3911513489635657-1.jpg ",
+    image_url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlXD4-s8UaLHuBnQ5O1cmewR7YuKeusucM3A&usqp=CAU",
     brand: "U.S. Polo Assn.",
     para: "Printed Polo Collar Pure Cotton T-Shirt ",
     price: "Rs. 1259 ",
