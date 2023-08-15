@@ -152,7 +152,8 @@ var funitureData = [
         size:'M',
         offer : "(65% OFF)",
         wishList : "WISHLIST",
-        addToBag : "ADD TO BAG", category: "furniture",
+        addToBag : "ADD TO BAG", 
+        category: "furniture",
       },
       {
         image_url:
@@ -167,7 +168,8 @@ var funitureData = [
         size:'M',
         offer : "(65% OFF)",
         wishList : "WISHLIST",
-        addToBag : "ADD TO BAG", category: "furniture",
+        addToBag : "ADD TO BAG", 
+        category: "furniture",
       },
       {
         image_url:
@@ -182,7 +184,8 @@ var funitureData = [
         size:'M',
         offer : "(65% OFF)",
         wishList : "WISHLIST",
-        addToBag : "ADD TO BAG", category: "furniture",
+        addToBag : "ADD TO BAG", 
+        category: "furniture",
       },
       {
         image_url:"https://assets.myntassets.com/assets/images/19555338/2022/8/18/19c0bc16-966d-409e-987a-21b5acca46d01660833145687HandTowels1.jpg",
@@ -196,7 +199,8 @@ var funitureData = [
         size:'M',
         offer : "(65% OFF)",
         wishList : "WISHLIST",
-        addToBag : "ADD TO BAG", category: "furniture",
+        addToBag : "ADD TO BAG", 
+        category: "furniture",
       },
       {
         image_url:
@@ -211,7 +215,8 @@ var funitureData = [
         size:'M',
         offer : "(65% OFF)",
         wishList : "WISHLIST",
-        addToBag : "ADD TO BAG", category: "furniture",
+        addToBag : "ADD TO BAG", 
+        category: "furniture",
       },
       {
         image_url:
@@ -226,7 +231,8 @@ var funitureData = [
         size:'M',
         offer : "(65% OFF)",
         wishList : "WISHLIST",
-        addToBag : "ADD TO BAG", category: "furniture",
+        addToBag : "ADD TO BAG", 
+        category: "furniture",
       },
       {
         image_url:
@@ -241,7 +247,8 @@ var funitureData = [
         size:'M',
         offer : "(65% OFF)",
         wishList : "WISHLIST",
-        addToBag : "ADD TO BAG", category: "furniture",
+        addToBag : "ADD TO BAG", 
+        category: "furniture",
       },
       {
         image_url:
@@ -256,7 +263,8 @@ var funitureData = [
         size:'M',
         offer : "(65% OFF)",
         wishList : "WISHLIST",
-        addToBag : "ADD TO BAG", category: "furniture",
+        addToBag : "ADD TO BAG", 
+        category: "furniture",
       },
       {
         image_url:
@@ -271,7 +279,8 @@ var funitureData = [
         size:'M',
         offer : "(65% OFF)",
         wishList : "WISHLIST",
-        addToBag : "ADD TO BAG", category: "furniture",
+        addToBag : "ADD TO BAG", 
+        category: "furniture",
       },
       {
         image_url:
@@ -286,7 +295,8 @@ var funitureData = [
         size:'M',
         offer : "(65% OFF)",
         wishList : "WISHLIST",
-        addToBag : "ADD TO BAG", category: "furniture",
+        addToBag : "ADD TO BAG", 
+        category: "furniture",
       },
       {
         image_url:
@@ -301,7 +311,8 @@ var funitureData = [
         size:'M',
         offer : "(65% OFF)",
         wishList : "WISHLIST",
-        addToBag : "ADD TO BAG", category: "furniture",
+        addToBag : "ADD TO BAG", 
+        category: "furniture",
       },
       {
         image_url:
@@ -316,7 +327,8 @@ var funitureData = [
         size:'M',
         offer : "(65% OFF)",
         wishList : "WISHLIST",
-        addToBag : "ADD TO BAG", category: "furniture",
+        addToBag : "ADD TO BAG", 
+        category: "furniture",
       },
       {
         image_url:
@@ -331,7 +343,8 @@ var funitureData = [
         size:'M',
         offer : "(65% OFF)",
         wishList : "WISHLIST",
-        addToBag : "ADD TO BAG", category: "furniture",
+        addToBag : "ADD TO BAG", 
+        category: "furniture",
       },
       {
         image_url:
@@ -346,7 +359,8 @@ var funitureData = [
         size:'M',
         offer : "(80% OFF)",
         wishList : "WISHLIST",
-        addToBag : "ADD TO BAG", category: "furniture",
+        addToBag : "ADD TO BAG", 
+        category: "furniture",
       },
       {
         image_url:
@@ -361,7 +375,8 @@ var funitureData = [
         size:'M',
         offer : "(80% OFF)",
         wishList : "WISHLIST",
-        addToBag : "ADD TO BAG", category: "furniture",
+        addToBag : "ADD TO BAG", 
+        category: "furniture",
       },
       {
         image_url:
@@ -376,7 +391,8 @@ var funitureData = [
         size:'M',
         offer : "(65% OFF)",
         wishList : "WISHLIST",
-        addToBag : "ADD TO BAG", category: "furniture",
+        addToBag : "ADD TO BAG", 
+        category: "furniture",
       },
       {
         image_url:
@@ -391,7 +407,8 @@ var funitureData = [
         size:'M',
         offer : "(65% OFF)",
         wishList : "WISHLIST",
-        addToBag : "ADD TO BAG", category: "furniture",
+        addToBag : "ADD TO BAG", 
+        category: "furniture",
       },
       {
         image_url:
@@ -406,7 +423,8 @@ var funitureData = [
         size:'M',
           offer : "(65% OFF)",
           wishList : "WISHLIST",
-          addToBag : "ADD TO BAG", category: "furniture",
+          addToBag : "ADD TO BAG", 
+          category: "furniture",
       },
       {
         image_url:"https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/1819343/2017/3/22/11490161697872-Fos-Lighting-Unisex-Lamps-Lanterns-and-Lamp-Shades-9361490161697726-1.jpg",
@@ -420,7 +438,8 @@ var funitureData = [
         size:'M',
         offer : "(65% OFF)",
         wishList : "WISHLIST",
-        addToBag : "ADD TO BAG", category: "furniture",
+        addToBag : "ADD TO BAG", 
+        category: "furniture",
       },
       {
         image_url:
@@ -435,7 +454,8 @@ var funitureData = [
         size:'M',
           offer : "(65% OFF)",
         wishList : "WISHLIST",
-        addToBag : "ADD TO BAG", category: "furniture",
+        addToBag : "ADD TO BAG", 
+        category: "furniture",
       },
       {
         image_url:
@@ -450,7 +470,8 @@ var funitureData = [
         size:'M',
         offer : "(65% OFF)",
         wishList : "WISHLIST",
-        addToBag : "ADD TO BAG", category: "furniture",
+        addToBag : "ADD TO BAG", 
+        category: "furniture",
       },
       {
         image_url:
@@ -465,7 +486,8 @@ var funitureData = [
         size:'M',
         offer : "(65% OFF)",
         wishList : "WISHLIST",
-        addToBag : "ADD TO BAG", category: "furniture",
+        addToBag : "ADD TO BAG", 
+        category: "furniture",
       },
       {
         image_url:
@@ -480,7 +502,8 @@ var funitureData = [
         size:'M',
         offer : "(65% OFF)",
         wishList : "WISHLIST",
-        addToBag : "ADD TO BAG", category: "furniture",
+        addToBag : "ADD TO BAG", 
+        category: "furniture",
       },
       {
         image_url:
@@ -495,7 +518,8 @@ var funitureData = [
         size:'M',
         offer : "(65% OFF)",
         wishList : "WISHLIST",
-        addToBag : "ADD TO BAG", category: "furniture",
+        addToBag : "ADD TO BAG", 
+        category: "furniture",
       },
       {
         image_url:
@@ -510,7 +534,8 @@ var funitureData = [
         size:'M',
         offer : "(65% OFF)",
         wishList : "WISHLIST",
-        addToBag : "ADD TO BAG", category: "furniture",
+        addToBag : "ADD TO BAG", 
+        category: "furniture",
       },
       {
         image_url:
@@ -525,7 +550,8 @@ var funitureData = [
         size:'M',
         offer : "(65% OFF)",
         wishList : "WISHLIST",
-        addToBag : "ADD TO BAG", category: "furniture",
+        addToBag : "ADD TO BAG", 
+        category: "furniture",
       },
       {
         image_url:
@@ -540,7 +566,8 @@ var funitureData = [
         size:'M',
         offer : "(65% OFF)",
         wishList : "WISHLIST",
-        addToBag : "ADD TO BAG", category: "furniture",
+        addToBag : "ADD TO BAG", 
+        category: "furniture",
       },
     ];
 
