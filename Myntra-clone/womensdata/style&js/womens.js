@@ -542,7 +542,7 @@ var womensData = [{
 
 var wishList = JSON.parse(localStorage.getItem("wishListObj")) || [];
 
-var bagList = JSON.parse(localStorage.getItem("BagListObj")) || [];
+var bagList = JSON.parse(localStorage.getItem("cart-items")) || [];
 
 
 window.addEventListener('load', function(){
@@ -677,7 +677,7 @@ localStorage.setItem("wishListObj", JSON.stringify(wishList));
 
 function addToBaglist(element) {
 bagList.push(element);
-localStorage.setItem("BagListObj", JSON.stringify(bagList));
+localStorage.setItem("cart-items", JSON.stringify(bagList));
 }
 
 document.getElementById("land").addEventListener("click", function() {

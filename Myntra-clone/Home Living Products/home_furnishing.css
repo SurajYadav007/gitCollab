@@ -168,7 +168,7 @@ input[type="checkbox" i], input[type="radio" i]{
 
 
 /* color */
-span {
+strong {
     display: inline-block;
     width: .8vw;
     min-width: .4vw;

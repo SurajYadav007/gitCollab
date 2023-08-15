@@ -406,7 +406,7 @@ var productData = [{
     atw: "Add to Whishlist",
     category: "top",
 }, {
-    image_url: "https://m.media-amazon.com/images/I/71L5zNEos4L._AC_UY1100_.jpg",
+    image_url: "https://classicpolos.com/cdn/shop/files/2_fdfc3509-dff1-47d1-a23b-83bed5496126.jpg?v=1690808193",
     brand: "Louis Philippe",
     para: "Men Formal Slim-Fit Single-Breasted Suit",
     price: "Rs. 8799 ",
@@ -451,14 +451,19 @@ var productData = [{
 },];
 
 
+// Array to store wishlist items
 var wishListData = JSON.parse(localStorage.getItem("wishListObj")) || []
 
-var bagData = JSON.parse(localStorage.getItem("BagListObj")) || []
+// Array to store items in the shopping bag
+var bagData = JSON.parse(localStorage.getItem("cart-items")) || []
 
+
+// Event listener to load the page content
 window.addEventListener('load', function() {
     displayPage(productData)
 })
 
+// Event listener to sort products by brand name
 document.getElementById('nameSort').addEventListener('change', sortNames);
 
 function sortNames() {
@@ -482,6 +487,7 @@ function sortNames() {
     }
 }
 
+// Event listener to sort products by price
 document.getElementById('priceSort').addEventListener('change', sortPrice);
 
 function sortPrice() {
@@ -499,6 +505,8 @@ function sortPrice() {
     }
 }
 
+
+// Event listener to filter products by brand
 document.getElementById('brandFilter').addEventListener('change', filteradioboxrand);
 
 function filteradioboxrand() {
@@ -512,6 +520,7 @@ function filteradioboxrand() {
 }
 
 
+// Function to display product data on the page
 function displayPage(productData) {
 
     document.getElementById("container").innerHTML = "";
@@ -590,19 +599,23 @@ function displayPage(productData) {
 }
 
 
-
+// Function to add a product to the wishlist
 function addToWishlist(element) {
     // console.log(element)
     wishListData.push(element)
     localStorage.setItem("wishListObj", JSON.stringify(wishListData))
 }
 
+
+// Function to add a product to the shopping bag
 function addToBag(element) {
     // console.log(element)
     bagData.push(element)
-    localStorage.setItem("BagListObj", JSON.stringify(bagData))
+    localStorage.setItem("cart-items", JSON.stringify(bagData))
 }
 
+
+// Event listener to navigate back to the Main page
 document.getElementById('landingPage').addEventListener('click', function() {
 window.location.href = "MainPage.html"
 }) 

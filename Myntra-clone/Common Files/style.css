@@ -295,7 +295,10 @@ header >* {
    margin-left: 4rem;
     display: flex;
     align-items: center;
+    text-align: center;
+    color: #5b6da8;
   }
+ 
 
   /* CONTAINER COMMON CSS */
   .container{
@@ -495,14 +498,13 @@ header >* {
   @media all and (min-width: 551px) and (max-width: 850px) {
       
     /* NAVBAR */
-    header{
-        justify-content: unset;
-        padding: 0 2rem;
-        background-color: #ffc0box;
-        box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
+    header {
         justify-content: space-evenly;
-       
+        padding: 0 2rem;
+        background-color: #ffc0b0; /* Corrected color value */
+        box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
     }
+    
     #logo{
       display: flex;
       align-items: center;
@@ -538,7 +540,7 @@ header >* {
     }
 
     #Dropdown > #drop{
-        background-color: #ffc0box;
+        background-color: #ffc0b0;
         box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
     }
     
@@ -583,7 +585,7 @@ header >* {
       }
       .dropdown-content .top{
           padding: 0 0.5rem;
-          background-color: #ffc0box;
+          background-color: #ffc0b0;
       }
       .dropdown-content .bottom{
           display: none;
@@ -683,7 +685,7 @@ footer section, footer hr{
     header{
         justify-content: unset;
         padding: 0 2rem;
-        background-color: #ffc0box;
+        background-color: #ffc0b0;
         box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
         justify-content: space-between;
        
@@ -763,7 +765,7 @@ footer section, footer hr{
       }
       .dropdown-content .top{
           padding: 0 0.5rem 1.3rem;
-          background-color: #ffc0box;
+          background-color: #ffc0b0;
       }
       .dropdown-content .bottom{
           display: flex;

@@ -5,14 +5,14 @@
     [{img_url : "https://m.media-amazon.com/images/G/31/img21/MA2023/BOTW23/Aug9-15/Associate_3000x900._box597742768_.jpg"},
     {img_url : "https://m.media-amazon.com/images/G/31/img21/MA2023/July/Lifestyle/3000x1000._SX3000_QL85_.jpg"},
     {img_url : "https://m.media-amazon.com/images/G/31/img21/MA2023/WRS/P0/Rush/Evergreen_best_picks._box587786074_.png"},
-    {img_url : "https://bit.ly/3NxptOo"},
+    {img_url : "https://m.media-amazon.com/images/G/31/img21/MA2023/PD23/sbcheader/Hero._SX3000_QL85_FMpng_.png"},
     ],
 
     //FOR MOBILE VIEW
     [{img_url : "https://m.media-amazon.com/images/G/31/img21/MA2023/BOTW23/Aug9-15/Associate_3000x900._box597742768_.jpg"},
     {img_url : "https://m.media-amazon.com/images/G/31/img21/MA2023/July/Lifestyle/3000x1000._SX3000_QL85_.jpg"},
     {img_url: "https://m.media-amazon.com/images/G/31/img21/MA2023/WRS/P0/Rush/Evergreen_best_picks._box587786074_.png"},
-    {img_url: "https://bit.ly/3tTroEZ"},
+    {img_url: "https://m.media-amazon.com/images/G/31/img21/MA2023/PD23/sbcheader/Hero._SX3000_QL85_FMpng_.png"},
     ]
   ]
 
