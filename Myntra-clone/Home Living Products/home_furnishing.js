@@ -176,7 +176,7 @@ var funitureData = [
       },
       {
         image_url:
-          "https://bit.ly/3wJjTCw",
+          "https://assets.myntassets.com/dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/15659722/2021/9/28/7cc37ccf-3566-4c8c-a4fa-edbcad1cd3a71632825797041BIANCAUnisexOffWhiteFloral1.jpg",
         brand: "Florida",
         para : "Yellow & Blue Geometric Bedsheet",
         rs : 554,
@@ -189,7 +189,7 @@ var funitureData = [
       {
         image_url:
           "https://bit.ly/36QSKmd",
-        brand: "SEJ by Nisha Gupta",
+        brand: "Florida",
         para : "Off-White Geometric Bedsheet",
         rs : 759,
         price: "Rs. 759",
@@ -201,7 +201,7 @@ var funitureData = [
       {
         image_url:
           "https://bit.ly/3qLCqdE",
-        brand: "Dreamscape",
+        brand: "Florida",
         para : "Blue Ethnic No 1 cotton Bedsheet",
         rs : 899,
         price: "Rs. 899",
@@ -225,7 +225,7 @@ var funitureData = [
       {
         image_url:
           "https://bit.ly/3uFBPv4",
-        brand: "JAIPUR FABRIC",
+        brand: "Varde",
         para : "Blue & Mustard cotton Bedsheet",
         rs : 999,
         price: "Rs. 999",
@@ -249,7 +249,7 @@ var funitureData = [
       {
         image_url:
           "https://bit.ly/3uB6yte",
-        brand: "LA VERNE",
+        brand: "Varde",
         para : "Set of 2 White Solid cotton Pillows",
         rs : 699,
         price: "Rs. 699",
@@ -260,33 +260,33 @@ var funitureData = [
       },
       {
         image_url:
-          "https://bit.ly/3wIEUgF",
-        brand: "Kuber Industries",
-        para : "Set Of 6 Red Printed Storage",
-        rs : 674,
-        price: "Rs. 674",
-        strikedoffprice: "Rs. 2599",
-        offer : "(65% OFF)",
+          "https://assets.myntassets.com/dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/18356520/2022/5/20/5d6b0a12-0fb8-4556-a1e4-df84a49985b41653054436964FloorLamps1.jpg",
+        brand: "SANDED EDGE",
+        para : "Beige 4 Tier Shelf Storage Floor Lamp",
+        rs : 3800,
+        price: "Rs. 3800",
+        strikedoffprice: "Rs. 19000",
+        offer : "(80% OFF)",
         wishList : "WISHLIST",
         addToBag : "ADD TO BAG",
       },
       {
         image_url:
-          "https://bit.ly/36TM7j1",
-        brand: "Rajasthan Decor",
-        para : "Black & White Abstract Bedsheet",
-        rs : 866,
-        price: "Rs. 866",
-        strikedoffprice: "Rs. 1499",
-        offer : "(65% OFF)",
+          "https://assets.myntassets.com/dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/15534020/2021/9/20/7a7028ed-c881-466a-89f5-1f574d1c8cf61632126824415MagnumLampwith3TierShelfSpaceinWalnutHandPolished1.jpg",
+        brand: "SANDED EDGE",
+        para : "Beige 4 Tier Shelf Storage Floor Lamp",
+        rs : 3800,
+        price: "Rs. 3800",
+        strikedoffprice: "Rs. 19000",
+        offer : "(80% OFF)",
         wishList : "WISHLIST",
         addToBag : "ADD TO BAG",
       },
       {
         image_url:
-          "https://bit.ly/3wMc52R",
-        brand: "Trident",
-        para : "Peach & White Floral Bedsheet",
+          "https://m.media-amazon.com/images/I/610qKh2vWOL.jpg",
+        brand: "SANDED EDGE",
+        para : "Solid Wood Floor Lamp",
         rs : 1799,
         price: "Rs. 1799",
         strikedoffprice: "Rs. 2199",
@@ -296,49 +296,48 @@ var funitureData = [
       },
       {
         image_url:
-          "https://bit.ly/3NywPBe",
-        brand: "ELEVANTO",
-        para : "Women Navy Blue Solid Bath Robe",
-        rs : 489,
-        price: "Rs. 489",
-        strikedoffprice: "Rs. 999",
+          "https://m.media-amazon.com/images/I/81RX10+PL7L._AC_UF1000,1000_QL80_.jpg",
+        brand: "SANDED EDGE",
+        para : "Solid Wood Floor Lamp with 3 Legs",
+        rs : 1489,
+        price: "Rs. 1489",
+        strikedoffprice: "Rs. 3999",
         offer : "(65% OFF)",
         wishList : "WISHLIST",
         addToBag : "ADD TO BAG",
       },
       {
         image_url:
-          "https://bit.ly/3wKg6VB",
-        brand: "Trident",
-        para : "Teal Blue Solid Pure Cotton Towel",
-        rs : 549,
-        price: "Rs. 549",
-        strikedoffprice: "Rs. 999",
-        offer : "(65% OFF)",
-        wishList : "WISHLIST",
-        addToBag : "ADD TO BAG",
+          "https://cdn.shopify.com/s/files/1/0288/2152/0472/files/32-050-C-X_640x.jpg?v=1688655494",
+          brand: "SANDED EDGE",
+          para : "Solid Wood Floor Lamp with Tripods",
+          rs : 1489,
+          price: "Rs. 1489",
+          strikedoffprice: "Rs. 3999",
+          offer : "(65% OFF)",
+          wishList : "WISHLIST",
+          addToBag : "ADD TO BAG",
       },
       {
-        image_url:
-          "https://bit.ly/3LswG03",
+        image_url:"https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/1819343/2017/3/22/11490161697872-Fos-Lighting-Unisex-Lamps-Lanterns-and-Lamp-Shades-9361490161697726-1.jpg",
         brand: "LA VERNE",
-        para : "Set of 2 White Striped Pillow",
-        rs : 599,
-        price: "Rs. 599",
-        strikedoffprice: "Rs. 1999",
+        para : "Gold-Toned & White Carved Glass Wallchiere Lamp",
+        rs : 1599,
+        price: "Rs. 1599",
+        strikedoffprice: "Rs. 2999",
         offer : "(65% OFF)",
         wishList : "WISHLIST",
         addToBag : "ADD TO BAG",
       },
       {
         image_url:
-          "https://bit.ly/36BnaJr",
-        brand: "TRIBAN By Decathlon",
-        para : "Black Solid Mobility Plastic Bottle",
-        rs : 159,
-        price: "Rs. 159",
-        strikedoffprice: "Rs. 199",
-        offer : "(65% OFF)",
+          "https://assets.myntassets.com/fl_progressive/h_960,q_80,w_720/v1/assets/images/1819341/2017/3/22/11490161685539-Fos-Lighting-Unisex-Lamps-Lanterns-and-Lamp-Shades-331490161685424-1.jpg",
+          brand: "LA VERNE",
+          para : "Gold-Toned & Brown Carved Glass Wallchiere Lamp",
+          rs : 1599,
+          price: "Rs. 1599",
+          strikedoffprice: "Rs. 2999",
+          offer : "(65% OFF)",
         wishList : "WISHLIST",
         addToBag : "ADD TO BAG",
       },
@@ -356,9 +355,9 @@ var funitureData = [
       },
       {
         image_url:
-          "https://bit.ly/36ya7sn",
-        brand: "Classic Mosquito Net",
-        para : "White & Blue Sheer Mosquito Net",
+          "https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/3077772/2018/3/9/11520579914704-na-4571520579914556-1.jpg",
+          brand: "LA VERNE",
+          para : "Gold-Toned & Cream Carved Glass Wallchiere Lamp",
         rs : 1049,
         price: "Rs. 1049",
         strikedoffprice: "Rs. 2599",
@@ -368,11 +367,11 @@ var funitureData = [
       },
       {
         image_url:
-          "https://bit.ly/3uJV72G",
-        brand: "ELEVANTO",
-        para : "Women Fuchsia Pink Solid Bath Robe",
-        rs : 623,
-        price: "Rs. 623",
+          "https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/productimage/2019/1/22/942f7429-8887-4ba3-a88b-38546e9caf761548138409359-1.jpg",
+          brand: "LA VERNE",
+          para : "Crystal Gold-Toned Glass Wallchiere Lamp",
+        rs : 1049,
+        price: "Rs. 1049",
         strikedoffprice: "Rs. 2599",
         offer : "(65% OFF)",
         wishList : "WISHLIST",
@@ -463,7 +462,7 @@ var funitureData = [
     document.getElementById('priceSort').addEventListener('change', sortPrice); 
     function sortPrice(){
       var selected = document.getElementById('priceSort').value;
-      if(selected == 'lth'){
+      if(selected == 'low'){
         funitureData.sort(function(a, b){
           return a.rs-b.rs;
         })
