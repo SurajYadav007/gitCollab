@@ -66,7 +66,8 @@ function startTimer(durationInSeconds) {
   var form = document.querySelector("form");
   var otp_num = document.getElementsByClassName("otp-field");
   var not_valid= document.getElementById("not_valid");
-
+  var numb = document.getElementById("numb")
+  numb.textContent = JSON.parse(localStorage.getItem("temp_mobile"))
 
   form.addEventListener("submit",function(el){
       el.preventDefault();
@@ -98,4 +99,29 @@ function startTimer(durationInSeconds) {
       }
     })
 
-    
+    // /////////////
+
+// navbar.js
+
+document.addEventListener("DOMContentLoaded", function () {
+  const navbarPlaceholder = document.getElementById("navbar-placeholder");
+
+  if (navbarPlaceholder) {
+    // Fetch the navigation bar content directly
+    fetch("../index.html")
+      .then(response => response.text())
+      .then(htmlContent => {
+        const tempContainer = document.createElement("div");
+        tempContainer.innerHTML = htmlContent;
+
+        const navbar = tempContainer.querySelector("#navbar");
+
+        if (navbar) {
+          const clonedNavbar = navbar.cloneNode(true);
+          navbarPlaceholder.appendChild(clonedNavbar);
+        }
+      });
+  }
+});
+
+// //////////////////
