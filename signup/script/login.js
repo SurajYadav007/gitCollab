@@ -1,5 +1,34 @@
 var form = document.querySelector("form");
 var warning = document.getElementById("warning");
+localStorage.setItem("status",JSON.stringify(false));
+
+
+// /////////////
+
+// navbar.js
+
+document.addEventListener("DOMContentLoaded", function () {
+  const navbarPlaceholder = document.getElementById("navbar-placeholder");
+
+  if (navbarPlaceholder) {
+    // Fetch the navigation bar content directly
+    fetch("../index.html")
+      .then(response => response.text())
+      .then(htmlContent => {
+        const tempContainer = document.createElement("div");
+        tempContainer.innerHTML = htmlContent;
+
+        const navbar = tempContainer.querySelector("#navbar");
+
+        if (navbar) {
+          const clonedNavbar = navbar.cloneNode(true);
+          navbarPlaceholder.appendChild(clonedNavbar);
+        }
+      });
+  }
+});
+
+// //////////////////
 
 form.addEventListener("submit",function(el){
     el.preventDefault();
@@ -9,22 +38,7 @@ form.addEventListener("submit",function(el){
     if(num.length != 10){
         warning.style.display = "block";
     }else{
-        var obj = {
-            mobile : Number(el.target.number_input.value),
-        };
         warning.style.display = "none";
-        
-        // var flag = true;
-        // userInfo.forEach(element => {
-        //     if(element.mobile === Number(el.target.number_input.value)){
-        //         flag = false;
-        //     }
-        // });
-
-        // if(flag){
-        //     userInfo.push(obj);
-        //     localStorage.setItem("userInfo",JSON.stringify(userInfo));
-        // }
         localStorage.setItem("temp_mobile",JSON.stringify(Number(el.target.number_input.value)));
         
         window.location.assign("./otp.html");

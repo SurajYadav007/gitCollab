@@ -22,7 +22,37 @@ form.addEventListener("submit",function(el){
 
     if(flag && obj.pas_code == pass_code.value){
         alert_ac.style.display = "none"
+        window.location.assign("../index.html");
     }else{
         alert_ac.style.display = "block";
     }
 })
+
+
+// /////////////
+
+// navbar.js
+
+document.addEventListener("DOMContentLoaded", function () {
+    const navbarPlaceholder = document.getElementById("navbar-placeholder");
+  
+    if (navbarPlaceholder) {
+      // Fetch the navigation bar content directly
+      fetch("../index.html")
+        .then(response => response.text())
+        .then(htmlContent => {
+          const tempContainer = document.createElement("div");
+          tempContainer.innerHTML = htmlContent;
+  
+          const navbar = tempContainer.querySelector("#navbar");
+  
+          if (navbar) {
+            const clonedNavbar = navbar.cloneNode(true);
+            navbarPlaceholder.appendChild(clonedNavbar);
+          }
+        });
+    }
+  });
+  
+  // //////////////////
+  

@@ -38,7 +38,35 @@ form.addEventListener("submit",function(el){
             userInfo.push(obj);
             localStorage.setItem("userInfo",JSON.stringify(userInfo));
         
-            window.location.assign("#")
+            window.location.assign("../index.html");
         }
     }
 })
+
+
+// /////////////
+
+// navbar.js
+
+document.addEventListener("DOMContentLoaded", function () {
+    const navbarPlaceholder = document.getElementById("navbar-placeholder");
+  
+    if (navbarPlaceholder) {
+      // Fetch the navigation bar content directly
+      fetch("../index.html")
+        .then(response => response.text())
+        .then(htmlContent => {
+          const tempContainer = document.createElement("div");
+          tempContainer.innerHTML = htmlContent;
+  
+          const navbar = tempContainer.querySelector("#navbar");
+  
+          if (navbar) {
+            const clonedNavbar = navbar.cloneNode(true);
+            navbarPlaceholder.appendChild(clonedNavbar);
+          }
+        });
+    }
+  });
+  
+  // //////////////////
