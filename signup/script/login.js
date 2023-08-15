@@ -1,24 +1,32 @@
 var form = document.querySelector("form");
-var sing_up_details = JSON.parse(localStorage.getItem("signup-details"));
+var warning = document.getElementById("warning");
 
 form.addEventListener("submit",function(el){
     el.preventDefault();
-    var user_n = el.target.UserName.value;
-    var user_pass = el.target.log_password.value;
-    var flag = true;
 
+    var num = el.target.number_input.value;
+    
+    if(num.length != 10){
+        warning.style.display = "block";
+    }else{
+        var obj = {
+            mobile : Number(el.target.number_input.value),
+        };
+        warning.style.display = "none";
+        
+        // var flag = true;
+        // userInfo.forEach(element => {
+        //     if(element.mobile === Number(el.target.number_input.value)){
+        //         flag = false;
+        //     }
+        // });
 
-    sing_up_details.forEach(element => {
-        if(element.n_userName == user_n && element.n_password == user_pass){
-            window.location.assign("../Myntra clone/MEN.HTML");
-            localStorage.setItem("Logedin", JSON.stringify(true));
-            flag = false;
-            return;
-        }
-    });
-
-    if(flag){
-       alert("UserName or Password Is Wrong 😊");
+        // if(flag){
+        //     userInfo.push(obj);
+        //     localStorage.setItem("userInfo",JSON.stringify(userInfo));
+        // }
+        localStorage.setItem("temp_mobile",JSON.stringify(Number(el.target.number_input.value)));
+        
+        window.location.assign("./otp.html");
     }
-
 })
