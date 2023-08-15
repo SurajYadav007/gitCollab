@@ -1,4 +1,5 @@
 var wearableItems = JSON.parse(localStorage.getItem('cart-items')) || [];
+localStorage.setItem('cart-items', JSON.stringify(wearableItems));
 const couponsList = JSON.parse(localStorage.getItem('coupons-list')) || [];
 var orderPricingDetails = {
   totalMRP: 0,
@@ -39,31 +40,31 @@ const closeApplyCouponButton = document.querySelector('#close-apply-coupon');
 //  displaying items on cart
 wearableItems.forEach((item) => {
   const {
-    type,
-    img1,
-    cost,
-    selling_cost,
-    discount,
-    name,
+    category,
+    image_url,
+    selling_price,
+    offer,
+    para,
     brand,
     quantity,
     size,
+    rs,
   } = item;
 
-  totalAmt += cost * quantity;
-  totalMRP += selling_cost * quantity;
+  totalAmt += rs * quantity;
+  totalMRP += selling_price * quantity;
 
   const card = document.createElement('div');
   card.classList.add('item-card');
 
   const img = document.createElement('img');
-  img.setAttribute('src', img1);
+  img.setAttribute('src', image_url);
   img.setAttribute('alt', brand);
 
   const itemInfo = document.createElement('div');
 
-  const itemName = document.createElement('h4');
-  itemName.textContent = name;
+  const itemPara = document.createElement('p');
+  itemPara.textContent = para;
 
   const itemBrand = document.createElement('h5');
   itemBrand.textContent = brand;
@@ -77,7 +78,7 @@ wearableItems.forEach((item) => {
   const itemSize = document.createElement('select');
 
   const sizes =
-    type === 'top'
+    category === 'top'
       ? ['S', 'M', 'L', 'XL', 'XXL', '3XL', '4XL', '5XL']
       : [6.5, 7.5, 8.5, 9.5, 10.5, 11.5, 12.5];
 
@@ -112,14 +113,14 @@ wearableItems.forEach((item) => {
     //find the item in local storage
     wearableItems = JSON.parse(localStorage.getItem('cart-items')) || [];
     wearableItems.forEach((i) => {
-      if (i.name === name && i.brand === brand) {
+      if (i.para === para && i.brand === brand) {
         var prevQuantity = i.quantity;
         i.quantity = event.target.value;
         orderPricingDetails =
           JSON.parse(localStorage.getItem('order-pricing-details')) || {};
         orderPricingDetails.totalMRP +=
-          selling_cost * (i.quantity - prevQuantity);
-        orderPricingDetails.totalAmt += cost * (i.quantity - prevQuantity);
+          selling_price * (i.quantity - prevQuantity);
+        orderPricingDetails.totalAmt += rs * (i.quantity - prevQuantity);
         localStorage.setItem(
           'order-pricing-details',
           JSON.stringify(orderPricingDetails)
@@ -144,14 +145,14 @@ wearableItems.forEach((item) => {
   pricingDetails.classList.add('pricing-details');
 
   const itemPrice = document.createElement('h4');
-  itemPrice.textContent = `₹${cost}`;
+  itemPrice.textContent = `₹${rs}`;
 
   const itemSellingPrice = document.createElement('h4');
-  itemSellingPrice.textContent = `₹${selling_cost}`;
+  itemSellingPrice.textContent = `₹${selling_price}`;
   itemSellingPrice.classList.add('strike-off');
 
   const itemDiscount = document.createElement('h4');
-  itemDiscount.textContent = discount;
+  itemDiscount.textContent = offer;
   itemDiscount.classList.add('discount');
 
   pricingDetails.append(itemPrice, itemSellingPrice, itemDiscount);
@@ -164,11 +165,11 @@ wearableItems.forEach((item) => {
     event.target.parentNode.remove();
     wearableItems = JSON.parse(localStorage.getItem('cart-items')) || [];
     wearableItems.forEach((i) => {
-      if (i.name === name && i.brand === brand) {
+      if (i.para === para && i.brand === brand) {
         orderPricingDetails =
           JSON.parse(localStorage.getItem('order-pricing-details')) || {};
-        orderPricingDetails.totalMRP -= selling_cost * i.quantity;
-        orderPricingDetails.totalAmt -= cost * i.quantity;
+        orderPricingDetails.totalMRP -= selling_price * i.quantity;
+        orderPricingDetails.totalAmt -= rs * i.quantity;
         localStorage.setItem(
           'order-pricing-details',
           JSON.stringify(orderPricingDetails)
@@ -177,12 +178,12 @@ wearableItems.forEach((item) => {
       }
     });
     wearableItems = wearableItems.filter(
-      (i) => i.name !== name && i.brand !== brand
+      (i) => i.para !== para && i.brand !== brand
     );
     localStorage.setItem('cart-items', JSON.stringify(wearableItems));
   });
 
-  itemInfo.append(itemName, itemBrand, sizeAndQuantity, pricingDetails);
+  itemInfo.append(itemBrand, itemPara, sizeAndQuantity, pricingDetails);
   card.append(img, itemInfo, removeBtn);
   items.append(card);
 });

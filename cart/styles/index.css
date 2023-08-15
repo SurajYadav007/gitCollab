@@ -317,7 +317,7 @@ button:hover{
     }
 }
 
-@media screen and (min-width : 451px) and (max-width : 700px){
+@media screen and (max-width : 700px){
   #container{
     flex-direction: column;
   }
@@ -341,4 +341,10 @@ button:hover{
   #support-buttons{
     gap : 2em;
   }
+}
+
+@media screen and (max-width : 600px){
+    #progress-bar > h4{
+        display : none;
+    }
 }
