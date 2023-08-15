@@ -149,6 +149,27 @@
                 <span>Total Amount</span><span class="amount_pay">--</span>
             </div>
         </div>
+
+        <!-- Modal section-->
+        <section class="modal hidden">
+            <div>
+                <button class="btn-close">⨉</button>
+            </div>
+            <div>
+                <h3>Apply Gift Card</h3>
+                <p>
+                    Gift card value will be added to your Myntra Credit.
+                </p>
+            </div>
+
+            <input class="giftcard-number" id="gcNumber" maxlength="16" type="tel"
+                placeholder="16 Digits Gift Card Number">
+            <input class="giftcard-pin" id="gcPin" maxlength="6" type="tel" pattern="\d*"
+                placeholder="6 Digits Gift Card Pin">
+            <button class="btn">ADD TO MYNTRA CREDIT</button>
+        </section>
+        <div class="overlay hidden"></div>
+    </div>
     </div>
 </body>
 

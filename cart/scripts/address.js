@@ -71,3 +71,7 @@ function clearForm() {
   addressForm.city.value = '';
   addressForm.state.value = '';
 }
+
+document.getElementById("place-button").onclick = function () {
+  location.href = "../payment/index.html";
+};

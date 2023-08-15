@@ -13,14 +13,20 @@ document.querySelector(
   ".pricedets"
 ).innerText = `PRICE DETAILS ( ${itemcount} Items)`;
 
-document.querySelector("#first").addEventListener("click", function () {
-  window.location.href = "../wishlist/cart.html";
-});
+// document.querySelector("#first").addEventListener("click", function () {
+//   window.location.href = "../cart/index.html";
+// });
 
-document.querySelector("#second").addEventListener("click", function () {
-  window.location.href = "../payment/address.html";
-});
+// document.querySelector("#second").addEventListener("click", function () {
+//   window.location.href = "../cart/address.html";
+// });
 
+document.getElementById('logo').addEventListener('click',function(){
+  window.location.href = "../index.html";
+});
+document.querySelector('.giftcard-base-apply').addEventListener('click',function(){
+  
+});
 const paymentMethods = document.querySelectorAll("#mode > div");
 const paymentDiv = document.getElementById("paymentDiv");
 
@@ -123,3 +129,10 @@ showLessLink.addEventListener("click", () => {
   showMoreLink.style.display = "block";
   showLessLink.style.display = "none";
 });
+
+
+let price_details = JSON.parse(localStorage.getItem('order-pricing-details'));
+
+document.querySelector('.totalprice').textContent = price_details.totalMRP;
+document.querySelector('.filldiscount').textContent = "- " + price_details.discount;
+document.querySelector('.amount_pay').textContent = price_details.totalAmount;
