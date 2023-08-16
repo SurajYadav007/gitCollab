@@ -37,6 +37,8 @@ form.addEventListener("submit",function(el){
             
             userInfo.push(obj);
             localStorage.setItem("userInfo",JSON.stringify(userInfo));
+
+            localStorage.setItem("status",true);
         
             window.location.assign("../index.html");
         }
