@@ -8,9 +8,9 @@ if (address_details && address_details.length) {
 
 
 document.querySelector(".contineue-btn").addEventListener("click", function () {
-    window.location.href = "../cart/index.html";
+    window.location.href = "../index.html";
 });
 
 document.querySelector(".view-btn").addEventListener("click", function () {
-    window.location.href = "../index.html";
+    window.location.href = "../cart/index.html";
 });
