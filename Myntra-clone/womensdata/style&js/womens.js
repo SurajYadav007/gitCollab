@@ -654,10 +654,22 @@ womensData.map(function(element) {
     addToBag.textContent = element.addToBag;
     addToBag.style.cursor = "pointer";
     
-    addToBag.addEventListener("click", function() {
-        addToBaglist(element);
-        addToBag.innerText = "ADDED TO BAG";
-    });
+    function addToBag(element) {
+        // console.log(element)
+        var bagData = JSON.parse(localStorage.getItem('cart-items')) || [];
+        var found = false;
+        bagData.forEach(item => {
+            if(item.brand === element.brand && item.para === element.para){
+                found = true;
+                item.quantity += 1;
+                
+            }
+        });
+        if(!found){
+            bagData.push(element);
+        }
+        localStorage.setItem("cart-items", JSON.stringify(bagData))
+    }
     
     contentBox.append(brand, para, mix, wishList, addToBag);
     box.append(img, contentBox);

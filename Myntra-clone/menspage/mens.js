@@ -610,7 +610,18 @@ function addToWishlist(element) {
 // Function to add a product to the shopping bag
 function addToBag(element) {
     // console.log(element)
-    bagData.push(element)
+    var bagData = JSON.parse(localStorage.getItem('cart-items')) || [];
+    var found = false;
+    bagData.forEach(item => {
+        if(item.brand === element.brand && item.para === element.para){
+            found = true;
+            item.quantity += 1;
+            
+        }
+    });
+    if(!found){
+        bagData.push(element);
+    }
     localStorage.setItem("cart-items", JSON.stringify(bagData))
 }
 
