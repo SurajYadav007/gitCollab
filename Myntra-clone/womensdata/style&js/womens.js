@@ -479,9 +479,9 @@ var womensData = [{
     category:"top",
 },
 {
-    image_url: "https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/8649953/2019/2/26/a0c553f7-5e4e-4580-a721-9787afc6ba921551153167184-Fossil-Women-Rose-Gold-Analogue-Factory-Serviced-Watch-ES302-1.jpg",
+    image_url: "https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/8649953/2019/2/26/a0c553f7-5e4e-4580-a721-9787afc6ba921551153167184-Fossil-Women-Rose-Gold-Analogue-Factory-Serviced-WaddToBagh-ES302-1.jpg",
     brand: "Fossil",
-    para: "MODERN SOP Women Rose Gold Analogue Watch BQ1561",
+    para: "MODERN SOP Women Rose Gold Analogue WaddToBagh BQ1561",
     rs: 4798,
     price: "Rs. 4798",
     strikedoffprice: "Rs. 11995",
@@ -542,7 +542,7 @@ var womensData = [{
 
 var wishList = JSON.parse(localStorage.getItem("wishListObj")) || [];
 
-var bagList = JSON.parse(localStorage.getItem("cart-items")) || [];
+var bagList = JSON.parse(localStorage.getItem("BagListObj")) || [];
 
 
 window.addEventListener('load', function(){
@@ -575,7 +575,7 @@ window.addEventListener('load', function(){
     document.getElementById('priceSort').addEventListener('change', sortPrice); 
     function sortPrice(){
       var selected = document.getElementById('priceSort').value;
-      if(selected == 'low'){
+      if(selected == 'lth'){
         womensData.sort(function(a, b){
           return a.rs-b.rs;
         })
@@ -589,8 +589,8 @@ window.addEventListener('load', function(){
       }
     }
 
-    document.getElementById('brandFilter').addEventListener('change', filteradioboxrand);
-    function filteradioboxrand(){
+    document.getElementById('brandFilter').addEventListener('change', filterBrand);
+    function filterBrand(){
       var selected = document.getElementById('brandFilter').value
       var newArray = womensData.filter(function(element){
           if(element.brand == selected){
@@ -654,28 +654,10 @@ womensData.map(function(element) {
     addToBag.textContent = element.addToBag;
     addToBag.style.cursor = "pointer";
     
-    function addToBag(element) {
-        // console.log(element)
-        var bagData = JSON.parse(localStorage.getItem('cart-items')) || [];
-        var status = JSON.parse(localStorage.getItem('cart-items')) || [];
-        if(status){
-            var found = false;
-            bagData.forEach(item => {
-                if(item.brand === element.brand && item.para === element.para){
-                    found = true;
-                    item.quantity += 1;
-                    
-                }
-            });
-            if(!found){
-                bagData.push(element);
-            }
-            localStorage.setItem("cart-items", JSON.stringify(bagData))
-        }else{
-            window.location.assign("../../signup/login.html")
-        }
-       
-    }
+    addToBag.addEventListener("click", function() {
+        addToBaglist(element);
+        addToBag.innerText = "ADDED TO BAG";
+    });
     
     contentBox.append(brand, para, mix, wishList, addToBag);
     box.append(img, contentBox);
@@ -683,31 +665,40 @@ womensData.map(function(element) {
     document.querySelector("#container").append(box);
     });
     
+    
+    // Total
 
 }
 
 
 
 function addToWishlist(element) {
-    var status = JSON.parse(localStorage.getItem("status"));
-  if(status){
-        wishList.push(element);
-        localStorage.setItem("wishListObj", JSON.stringify(wishList));
-    }else{
-            window.location.assign("../../signup/login.html")
-        }
+wishList.push(element);
+localStorage.setItem("wishListObj", JSON.stringify(wishList));
 }
+
 
 function addToBaglist(element) {
-    var status = JSON.parse(localStorage.getItem("status"));
-    if(status){
-        bagList.push(element);
-        localStorage.setItem("cart-items", JSON.stringify(bagList));
-    }else{
-        window.location.assign("../../signup/login.html")
+    // console.log(element)
+    var bagData = JSON.parse(localStorage.getItem('cart-items')) || [];
+    var found = false;
+    bagData.forEach(item => {
+        if(item.brand === element.brand && item.para === element.para){
+            found = true;
+            item.quantity += 1;
+            
+        }
+    });
+    if(!found){
+        bagData.push(element);
     }
-}
+    localStorage.setItem("cart-items", JSON.stringify(bagData))
+  }
+  
 
-document.getElementById("land").addEventListener("click", function() {
+
+
+// Event listener to navigate back to the Main page
+document.getElementById('landingPage').addEventListener('click', function() {
     window.location.assign("../../index.html")
-});
+}) 
