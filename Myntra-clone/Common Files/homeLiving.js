@@ -101,5 +101,5 @@ var anchors_para = [
   
   // MAIN PAGE
   document.getElementById('landingPage').addEventListener('click', function(){
-      window.location.href = "mainPage.html"
+      window.location.assign
   })
