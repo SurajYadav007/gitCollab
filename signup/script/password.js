@@ -13,10 +13,11 @@ form.addEventListener("submit",function(el){
     var flag = false;
     var obj ;
 
-    userInfo.forEach(element => {
+    userInfo.forEach((element,index) => {
         if(element.mobile_num == temp_mob){
             obj = element;
             flag = true;
+            localStorage.setItem("index",JSON.stringify(index));
         }
     });
 

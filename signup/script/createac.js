@@ -33,9 +33,12 @@ form.addEventListener("submit",function(el){
                 email_id : el.target.email.value,
                 pas_code : el.target.pass.value,
                 re_pas_code : el.target.pass.value,
+                cart : [],
+                wishlist : [],
             }
             
             userInfo.push(obj);
+            localStorage.setItem("index",JSON.stringify(userInfo.length - 1));
             localStorage.setItem("userInfo",JSON.stringify(userInfo));
         
             window.location.assign("../index.html");

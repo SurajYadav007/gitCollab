@@ -571,10 +571,11 @@ var funitureData = [
       },
     ];
 
+  var user_index =JSON.parse(localStorage.getItem("index"));
+  
+  var wishList =JSON.parse(localStorage.getItem("userInfo"))[user_index] || [];
 
-  var wishList =JSON.parse(localStorage.getItem("wishListObj")) || [];
-
-  var bagList =JSON.parse(localStorage.getItem("cart-items")) || [] ;
+  var bagList =JSON.parse(localStorage.getItem("cart"))[user_index] || [] ;
 
   window.addEventListener('load', function(){
     displayPage(funitureData)
