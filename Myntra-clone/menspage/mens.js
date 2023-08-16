@@ -602,8 +602,13 @@ function displayPage(productData) {
 // Function to add a product to the wishlist
 function addToWishlist(element) {
     // console.log(element)
-    wishListData.push(element)
-    localStorage.setItem("wishListObj", JSON.stringify(wishListData))
+    var status = JSON.parse(localStorage.getItem("status"));
+  if(status){
+        wishListData.push(element)
+        localStorage.setItem("wishListObj", JSON.stringify(wishListData))}
+        else{
+        window.location.assign("../../signup/login.html")
+    }
 }
 
 
@@ -623,6 +628,9 @@ function addToBag(element) {
         bagData.push(element);
     }
     localStorage.setItem("cart-items", JSON.stringify(bagData))
+  }else{
+    window.location.assign("../../signup/login.html")
+  }
 }
 
 

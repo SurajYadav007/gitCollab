@@ -135,6 +135,10 @@ function clearForm() {
   addressForm.state.value = '';
 }
 
+
+document.getElementById("place-button").onclick = function () {
+  location.href = "../payment/index.html";
+};
 formCloseBtn.addEventListener('click', (event) => {
   addressForm.style.display = 'none';
 });

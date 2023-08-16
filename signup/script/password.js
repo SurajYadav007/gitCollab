@@ -21,7 +21,8 @@ form.addEventListener("submit",function(el){
     });
 
     if(flag && obj.pas_code == pass_code.value){
-        alert_ac.style.display = "none"
+        alert_ac.style.display = "none";
+        localStorage.setItem("status",true);
         window.location.assign("../index.html");
     }else{
         alert_ac.style.display = "block";

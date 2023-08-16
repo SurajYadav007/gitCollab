@@ -708,13 +708,24 @@ var funitureData = [
 
 
 function addToWishlist(element) {
-wishList.push(element)
-localStorage.setItem("wishListObj" , JSON.stringify(wishList))
+  var status = JSON.parse(localStorage.getItem("status"));
+  if(status){
+    wishList.push(element)
+    localStorage.setItem("wishListObj" , JSON.stringify(wishList))
+  }else{
+    window.location.assign("../../signup/login.html")
+  }
+
 }
 
 function addToBaglist(element) {
-bagList.push(element)
-localStorage.setItem("cart-items" , JSON.stringify(bagList))
+  var status = JSON.parse(localStorage.getItem("status"));
+  if(status){
+    bagList.push(element)
+    localStorage.setItem("cart-items" , JSON.stringify(bagList))
+  }else{
+    window.location.assign("../../signup/login.html")
+  }
 }
 
 // Filter
@@ -723,7 +734,7 @@ localStorage.setItem("cart-items" , JSON.stringify(bagList))
 
 // LANDING PAGE
 document.getElementById('landingPage').addEventListener('click', function(){
-  window.location.assign("../../index.html")
+window.location.href = "index.html"
 })
 document.querySelector(".fa-heart").addEventListener("click",function(){
 window.location.href ="../wishlist/wishlist.html"
