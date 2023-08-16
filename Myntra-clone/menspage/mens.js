@@ -602,6 +602,7 @@ function displayPage(productData) {
 // Function to add a product to the wishlist
 function addToWishlist(element) {
     // console.log(element)
+    
     var status = JSON.parse(localStorage.getItem("status"));
   if(status){
         wishListData.push(element)
@@ -628,10 +629,9 @@ function addToBag(element) {
         bagData.push(element);
     }
     localStorage.setItem("cart-items", JSON.stringify(bagData))
-  }else{
-    window.location.assign("../../signup/login.html")
   }
-}
+  
+
 
 
 // Event listener to navigate back to the Main page
