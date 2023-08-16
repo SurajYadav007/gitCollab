@@ -13,16 +13,16 @@ form.addEventListener("submit",function(el){
     var flag = false;
     var obj ;
 
-    userInfo.forEach((element,index) => {
+    userInfo.forEach(element => {
         if(element.mobile_num == temp_mob){
             obj = element;
             flag = true;
-            localStorage.setItem("index",JSON.stringify(index));
         }
     });
 
     if(flag && obj.pas_code == pass_code.value){
-        alert_ac.style.display = "none"
+        alert_ac.style.display = "none";
+        localStorage.setItem("status",true);
         window.location.assign("../index.html");
     }else{
         alert_ac.style.display = "block";
