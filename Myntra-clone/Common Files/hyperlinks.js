@@ -11,7 +11,6 @@ document.querySelector(".fa_wishlist").addEventListener('click', function(){
 })
 document.querySelector('.fa-bag-shopping').addEventListener('click', function(){
     window.location.assign("../../cart/index.html")
-
 })
 document.querySelector('.fa_cart').addEventListener('click', function(){
     window.location.assign("../../cart/index.html")
