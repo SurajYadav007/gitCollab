@@ -21,5 +21,5 @@ window.onclick = function(event) {
 
 //<---------- HYPERLINK FOR PROFILE ---------->//
 document.getElementById('profile').addEventListener('click', function(){
-    window.location.href = "signup.html"
+    window.location.assign("../signup/login.html")
 })
