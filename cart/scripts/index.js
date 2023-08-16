@@ -1,6 +1,7 @@
 var wearableItems = JSON.parse(localStorage.getItem('cart-items')) || [];
-localStorage.setItem('cart-items', JSON.stringify(wearableItems));
-const couponsList = JSON.parse(localStorage.getItem('coupons-list')) || [];
+
+ const couponsList = JSON.parse(localStorage.getItem('coupons-list')) || [];
+
 var orderPricingDetails = {
   totalMRP: 0,
   discount: 0,

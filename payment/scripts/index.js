@@ -3,7 +3,7 @@ if (price_details) {
   document.querySelector(".totalprice").textContent = price_details.totalMRP;
   document.querySelector(".filldiscount").textContent =
     "- " + price_details.discount;
-  document.querySelector(".amount_pay").textContent = price_details.totalAmt;
+  document.querySelector(".amount_pay").textContent = price_details.totalAmt + price_details.couponDiscount + price_details.supportUsAmount;
 }
 
 // document.querySelector("#btn-PO1").addEventListener("click", function () {

@@ -45,6 +45,7 @@ function displayDefaultAddress() {
 }
 
 const display = (list) => {
+  addressContainer.innerHTML = '';
   list.forEach((ele) => {
     const { name, address, pincode, city, state, mobile } = ele;
 
@@ -141,4 +142,6 @@ document.getElementById("place-button").onclick = function () {
 formCloseBtn.addEventListener('click', (event) => {
   addressForm.style.display = 'none';
 });
-
+document.getElementById("place-button").onclick = function () {
+  location.href = "../payment/index.html";
+};

@@ -654,10 +654,28 @@ womensData.map(function(element) {
     addToBag.textContent = element.addToBag;
     addToBag.style.cursor = "pointer";
     
-    addToBag.addEventListener("click", function() {
-        addToBaglist(element);
-        addToBag.innerText = "ADDED TO BAG";
-    });
+    function addToBag(element) {
+        // console.log(element)
+        var bagData = JSON.parse(localStorage.getItem('cart-items')) || [];
+        var status = JSON.parse(localStorage.getItem('cart-items')) || [];
+        if(status){
+            var found = false;
+            bagData.forEach(item => {
+                if(item.brand === element.brand && item.para === element.para){
+                    found = true;
+                    item.quantity += 1;
+                    
+                }
+            });
+            if(!found){
+                bagData.push(element);
+            }
+            localStorage.setItem("cart-items", JSON.stringify(bagData))
+        }else{
+            window.location.assign("../../signup/login.html")
+        }
+       
+    }
     
     contentBox.append(brand, para, mix, wishList, addToBag);
     box.append(img, contentBox);
@@ -674,7 +692,8 @@ function addToWishlist(element) {
     var status = JSON.parse(localStorage.getItem("status"));
   if(status){
         wishList.push(element);
-        localStorage.setItem("wishListObj", JSON.stringify(wishList));}else{
+        localStorage.setItem("wishListObj", JSON.stringify(wishList));
+    }else{
             window.location.assign("../../signup/login.html")
         }
 }
