@@ -322,7 +322,7 @@ button {
     display: inline-block;
     padding: 0.8rem 1.4rem;
     font-weight: 700;
-    background-color: black;
+    background-color: #ff3f6c;
     color: white;
     border-radius: 5px;
     text-align: center;
@@ -335,10 +335,16 @@ button {
 }
 
 .btn-close {
+    justify-content: end;
     transform: translate(10px, -20px);
     padding: 0.5rem 0.7rem;
-    background: #eee;
+    background: #fff;
     border-radius: 50%;
+}
+
+.btn-close-wrapper {
+    display: flex;
+    justify-content: space-between;
 }
 
 .overlay {
@@ -353,56 +359,31 @@ button {
     backdrop-filter: blur(3px);
     z-index: 1;
 }
+
 .hidden {
     display: none;
 }
-/* Medium screen*/
-@media screen and (max-width: 480px) {
 
-    body {
-        font-size: 14px;
-    }
-
-    #navbar {
-        padding: 10px 20px;
-    }
-
-    #nav2 {
-        width: 100%;
-        justify-content: center;
-        margin-top: 10px;
-    }
-
-    .orderbox {
-        order: 1;
-        margin-top: 20px;
-        margin-bottom: 20px;
-    }
-
-    .checkout-footer {
-        order: 2;
-    }
+#btn-PO2,
+#btn-PO3 {
+    margin: 10px;
+    width: 100%;
+    text-align: center;
+    background: #ff3f6c;
+    color: #fff;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 48px;
+    cursor: pointer;
+    border-radius: 4px;
+    border: none;
+    text-transform: none;
+    overflow: visible;
 }
 
-/* Small Screens */
-@media screen and (min-width: 481px) and (max-width: 1024px) {
-
-    #cart {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    #main1 {
-        width: 100%;
-    }
-
-    #nav2 {
-        width: 100%;
-        justify-content: space-between;
-        margin-top: 10px;
-    }
-
-    .orderbox {
-        order: 3;
-    }
+#Recommended-div>h3 {
+    font-family: Assistant,
+        Helvetica,
+        Arial,
+        sans-serif !important;
 }
