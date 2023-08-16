@@ -19,3 +19,25 @@ btn_log.addEventListener("click",function(){
     btn.style.display = "block"
     btn_log.style.display = "none"
 })
+
+
+//////////////////////////////////////////////////
+var rightSideIcons = document.getElementsByClassName("rightSideIcons");
+
+
+rightSideIcons[0].addEventListener("click",function(){
+    var stat_s = JSON.parse(localStorage.getItem("status")) || false;
+    if(!stat_s){
+        window.location.assign("");
+        window.location.assign("./signup/login.html");
+    }
+})
+rightSideIcons[1].addEventListener("click",function(){
+    var stat_s = JSON.parse(localStorage.getItem("status")) || false;
+        if(!stat_s){
+            window.location.assign("");
+            window.location.assign("./signup/login.html");
+        }
+})
+
+
