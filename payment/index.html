@@ -93,6 +93,22 @@
                     </div>
                 </div>
                 <div id="paymentDiv">
+                    <div class="hidden" id="Recommended-div">
+                        <h3>Recommended Payment Options</h3>
+                        <form>
+                            <input type="radio" id="Gpay" name="payment-optn1">
+                            <label for="GPay">GPay</label><br>
+                            <div id="btn-place-order2" class="hidden">
+                                <button id="btn-PO2">PLACE ORDER</button>
+                            </div>
+                            <input type="radio" id="Cod" name="payment-optn1">
+                            <label for="COD">Cash on Delivery</label><br>
+                            <div id="btn-place-order3" class="hidden">
+                                <button id="btn-PO3">PLACE ORDER</button>
+                            </div>
+                        </form>
+                    </div>
+
 
                 </div>
             </div>
@@ -149,6 +165,28 @@
                 <span>Total Amount</span><span class="amount_pay">--</span>
             </div>
         </div>
+
+        <!-- Modal section-->
+        <section class="modal hidden">
+            <div class="btn-close-wrapper">
+                <h3>Apply Gift Card</h3>
+                <button class="btn-close">⨉</button>
+
+            </div>
+            <div>
+                <p>
+                    Gift card value will be added to your Myntra Credit.
+                </p>
+            </div>
+
+            <input class="giftcard-number" id="gcNumber" maxlength="16" type="text"
+                placeholder="16 Digits Gift Card Number">
+            <input class="giftcard-pin" id="gcPin" maxlength="6" type="text" pattern="\d*"
+                placeholder="6 Digits Gift Card Pin">
+            <button class="btn">ADD TO MYNTRA CREDIT</button>
+        </section>
+        <div class="overlay hidden"></div>
+    </div>
     </div>
 </body>
 

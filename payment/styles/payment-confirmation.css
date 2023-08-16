@@ -1,0 +1,202 @@
+.main-container {
+    background: #f4f4f5;
+    min-height: 600px;
+
+}
+
+#container {
+    background-color: white !important;
+    width: 53%;
+    height: 900px;
+    margin: auto;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+
+.center {
+    width: 70%;
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    padding: 10px;
+}
+
+.order-confirmed {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardComponents-base-confirmTick {
+    padding-top: 10px;
+    fill: #03a685;
+    width: 46px;
+    height: 46px;
+    margin-bottom: 16px;
+}
+
+.order-confirmed>h2 {
+    font-size: 32px;
+    color: #03a685;
+    font-family: Assistant, Helvetica, Arial, sans-serif !important;
+}
+
+.order-confirmed>p {
+    font-size: 18px;    
+    font-family: Assistant, Helvetica, Arial, sans-serif !important;
+    text-align: center;
+    color: rgba(40, 44, 63, 0.7)
+}
+
+.address-confirmation {
+    padding: 10px;
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.order-details-btn {
+    text-decoration: none;
+    border: 1px solid #ff3f6c;
+    color: #ff3f6c;
+    padding: 6.5px 12px;
+    display: flex;
+    align-items: center;
+    width: 124px;
+    justify-content: space-between;
+    border-radius: 4px;
+    margin: 16px 0;
+    font-weight: 700;
+    font-size: 12px;
+    font-family: Assistant, Helvetica, Arial, sans-serif !important;
+}
+
+.order-details-btn>svg {
+    height: 10px;
+
+    fill: #ff3f6c;
+}
+
+.ad-div1 {
+    padding: 20px;
+    padding-right: 0%;
+    width: 45%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.ad-div1>div>span {
+    font-size: 16px;
+    color: #282c3f;
+    font-weight: 700;
+    text-align: left;
+    font-family: Assistant, Helvetica, Arial, sans-serif !important;
+}
+
+.ad-div1>div>p {
+    font-size: 14px;
+    color: #282c3f;
+    width: 70%;
+    padding-top: 16px;
+}
+
+.ad-div1>div>h6 {
+    cursor: pointer;
+    color: #ff3f6c;
+    font-weight: 700;
+    margin-top: 8px;
+    font-family: Assistant, Helvetica, Arial, sans-serif !important;
+}
+
+.ad-div1>div:last-child {
+
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+
+.ad-div2 {
+    width: 40%;
+    position: relative;
+    padding-left: 23px;
+    padding-right: 23px;
+}
+
+.ad-div2>img {
+    width: 100%;
+    height: 110px;
+}
+
+#btn-div {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 32px;
+    box-shadow: none !important;
+    margin-top: 32px;
+    width: 50%;
+
+}
+
+#btn-div>button:first-child {
+    width: 30%;
+    background-color: #fff;
+    color: #282c3f;
+    border-color: #d4d5d9;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    text-align: center;
+    border: 1px solid;
+    border-radius: 4px;
+    padding: 12px 14px;
+    min-width: 48%;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+}
+
+#btn-div>button:last-child {
+    border: 1px solid;
+    border-radius: 4px;
+    padding: 12px 14px;
+    min-width: 48%;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    background: #ff3f6c;
+    cursor: pointer;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/*footer styling*/
+
+.checkout-footer .images {
+    display: inline-block;
+    font-family: Assistant, Helvetica, Arial, sans-serif !important;
+    text-rendering: optimizeLegibility;
+}
+
+.center-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 0;
+    background-color: #fff;
+}
+
+.content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.images img {
+    margin: 0 10px;
+}
