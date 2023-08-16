@@ -617,5 +617,5 @@ function addToBag(element) {
 
 // Event listener to navigate back to the Main page
 document.getElementById('landingPage').addEventListener('click', function() {
-window.location.href = "index.html"
+    window.location.assign("../../index.html")
 }) 

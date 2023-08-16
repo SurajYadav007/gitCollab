@@ -681,5 +681,5 @@ localStorage.setItem("cart-items", JSON.stringify(bagList));
 }
 
 document.getElementById("land").addEventListener("click", function() {
-window.location.href = "index.html";
+    window.location.assign("../../index.html")
 });
