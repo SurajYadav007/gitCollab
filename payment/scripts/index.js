@@ -3,7 +3,7 @@ if (price_details) {
   document.querySelector(".totalprice").textContent = price_details.totalMRP;
   document.querySelector(".filldiscount").textContent =
     "- " + price_details.discount;
-  document.querySelector(".amount_pay").textContent = price_details.totalAmount;
+  document.querySelector(".amount_pay").textContent = price_details.totalAmt;
 }
 
 // document.querySelector("#btn-PO1").addEventListener("click", function () {
@@ -53,15 +53,14 @@ document.addEventListener("keydown", function (e) {
   }
 });
 document.querySelector(".btn").addEventListener("click", function () {
-  console.log(price_details.totalAmount);
   let gfcnumber = document.querySelector("#gcNumber").value;
   let gfcpin = document.querySelector("#gcPin").value;
 
   if (!gfcnumber || !gfcpin) {
     alert("fill the details");
   } else if (gfcnumber == "Masai50" && gfcpin == "123456") {
-    let totalprice = JSON.parse(price_details.totalAmount) - 50;
-    price_details.totalAmount = totalprice;
+    let totalprice = JSON.parse(price_details.totalAmt) - 50;
+    price_details.totalAmt = totalprice;
     document.querySelector(".amount_pay").textContent = totalprice;
     localStorage.setItem(
       "order-pricing-details",
