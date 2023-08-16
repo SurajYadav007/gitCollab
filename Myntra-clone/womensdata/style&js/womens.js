@@ -574,31 +574,34 @@ window.addEventListener('load', function(){
 
     document.getElementById('priceSort').addEventListener('change', sortPrice); 
     function sortPrice(){
-      var selected = document.getElementById('priceSort').value;
-      if(selected == 'low'){
-        womensData.sort(function(a, b){
-          return a.rs-b.rs;
-        })
-        displayPage(womensData); 
-      }
-      else{
-        womensData.sort(function(a, b){
-          return b.rs - a.rs
-        })
-        displayPage(womensData)
-      }
+        
+       
+        if(selected == 'low'){
+            womensData.sort(function(a, b){
+            return a.rs-b.rs;
+            })
+            displayPage(womensData); 
+        }
+        else{
+            womensData.sort(function(a, b){
+            return b.rs - a.rs
+            })
+            displayPage(womensData)
+        }
     }
 
     document.getElementById('brandFilter').addEventListener('change', filteradioboxrand);
-    function filteradioboxrand(){
-      var selected = document.getElementById('brandFilter').value
-      var newArray = womensData.filter(function(element){
+       function filteradioboxrand(){
+       
+       var selected = document.getElementById('brandFilter').value
+       var newArray = womensData.filter(function(element){
           if(element.brand == selected){
             return element;
           }
       })
       displayPage(newArray);
     }
+
 
     function displayPage(womensData) {
 
@@ -654,29 +657,41 @@ womensData.map(function(element) {
     addToBag.textContent = element.addToBag;
     addToBag.style.cursor = "pointer";
     
-    function addToBag(element) {
-        // console.log(element)
-        var bagData = JSON.parse(localStorage.getItem('cart-items')) || [];
-        var status = JSON.parse(localStorage.getItem('cart-items')) || [];
-        if(status){
-            var found = false;
-            bagData.forEach(item => {
-                if(item.brand === element.brand && item.para === element.para){
-                    found = true;
-                    item.quantity += 1;
-                    
-                }
-            });
-            if(!found){
-                bagData.push(element);
-            }
-            localStorage.setItem("cart-items", JSON.stringify(bagData))
-        }else{
-            window.location.assign("../../signup/login.html")
-        }
-       
-    }
+    // Function to add a product to the wishlist
+function addToWishlist(element) {
+    // console.log(element)
     
+    var status = JSON.parse(localStorage.getItem("status"));
+  if(status){
+        wishListData.push(element)
+        localStorage.setItem("wishListObj", JSON.stringify(wishListData))}
+        else{
+        window.location.assign("../../signup/login.html")
+    }
+}
+
+
+// Function to add a product to the shopping bag
+function addToBag(element) {
+    // console.log(element)
+    var bagData = JSON.parse(localStorage.getItem('cart-items')) || [];
+    var found = false;
+    bagData.forEach(item => {
+        if(item.brand === element.brand && item.para === element.para){
+            found = true;
+            item.quantity += 1;
+            
+        }
+    });
+    if(!found){
+        bagData.push(element);
+    }
+    localStorage.setItem("cart-items", JSON.stringify(bagData))
+  }
+  
+
+
+
     contentBox.append(brand, para, mix, wishList, addToBag);
     box.append(img, contentBox);
     
@@ -684,28 +699,6 @@ womensData.map(function(element) {
     });
     
 
-}
-
-
-
-function addToWishlist(element) {
-    var status = JSON.parse(localStorage.getItem("status"));
-  if(status){
-        wishList.push(element);
-        localStorage.setItem("wishListObj", JSON.stringify(wishList));
-    }else{
-            window.location.assign("../../signup/login.html")
-        }
-}
-
-function addToBaglist(element) {
-    var status = JSON.parse(localStorage.getItem("status"));
-    if(status){
-        bagList.push(element);
-        localStorage.setItem("cart-items", JSON.stringify(bagList));
-    }else{
-        window.location.assign("../../signup/login.html")
-    }
 }
 
 document.getElementById("land").addEventListener("click", function() {
