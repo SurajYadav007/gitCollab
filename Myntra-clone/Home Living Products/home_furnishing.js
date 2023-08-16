@@ -729,8 +729,7 @@ document.querySelector(".fa-heart").addEventListener("click",function(){
 window.location.href ="../wishlist/wishlist.html"
 })
 document.querySelector(".fa-bag-shopping").addEventListener("click",function(){
-window.location.href ="cartpage.html"
-})
+  window.location.assign("../../cart/index.html")})
 
 // document.getElementById("normal").addEventListener("click" , function(){
 //   window.location.reload()

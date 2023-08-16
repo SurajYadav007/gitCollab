@@ -10,8 +10,9 @@ document.querySelector(".fa_wishlist").addEventListener('click', function(){
     window.location.href = "../wishlist/wishlist.html"
 })
 document.querySelector('.fa-bag-shopping').addEventListener('click', function(){
-    window.location.href = "cartPage.html"
+    window.location.assign("../../cart/index.html")
+
 })
 document.querySelector('.fa_cart').addEventListener('click', function(){
-    window.location.href = "cartpage.html"
+    window.location.assign("../../cart/index.html")
 })
