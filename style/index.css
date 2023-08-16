@@ -1,133 +1,190 @@
+/* @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+
+:root{
+    font-size: 62.5%;
+    --primaryFont : 'DM Sans', sans-serif;
+    --charSpace : 6px; 
+    --primaryColor : #3e4152;
+    --secondaryColor : #fafbfc;
+}
 body{
-    width: 100%;
-   
-}
-#header>a>img{
-    width: 20%;
-    margin-right: 2px;
-}
-#header{
-    display: flex;
-   gap: 20px;
-    box-shadow: 0 15px 15px rgba(0, 0, 0, 0.06);
-    z-index: 999;
-    position: sticky;
-    top: 0;
-    left: 0;
+    font-family: var(--primaryFont);
+    scroll-behavior: smooth;
 }
 #navbar{
-    display: flex;
-        justify-content: space-around;
-        gap: 20px;
-        text-align: center;
-        align-items: center;
-  
-}
-#navbar li{
-    list-style: none;
-    padding: 0px 20px;
-    justify-content: left;
-}
-#navbar li a{
-    display: flex;
-    justify-items: flex-start;
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: 600;
-    color: #1a1a1a;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
- #navbar li a:hover,
- #navbar li a.active {
-    color: #ff0000;
- }
- /*Home Page*/
- #hero > img{
-    width: 90%;
-    height: 50%;
-    padding: 30px 50px ;
- }
- #feature .fe-box > div img{
+    background-color: white;
+    font-family:Whitney;
     width: 100%;
-    margin-bottom: 10px;
- }
- #feature > h3{
-    text-align: center;
-    color: rgba(0, 21, 255, 0.76);
-    font-size: 30px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    margin: auto;
-    margin-bottom: 20px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    box-sizing: border-box;
+    padding: 35px;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;;
+    font-size: 14px;
+    line-height: 20px;
+    color:#545766;
+    font-weight: bolder;
+}
+
+#myntraIcon{
+    height: 60px;
+    width:  60px;
     
- }
-#feature .fe-box{
+}
+#searchbar{
     display: flex;
+    width: 30%;
+    background-color: #f5f5f6;
+    color: gray;
     text-align: center;
- }
- #feature .fe-box div>p{
-    font-size: 10px;
-    color: #1313e8;
-    margin-top: auto;
- }
- #feature .fe-box div>h4{
-    font-size: 10px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
- }
- #feature .fe-box div>p{
-    font-size: 10px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
- }
- #feature2 .fe-box2{
-    display: flex;
-    text-align: center;
- }
- #feature2 h3 {
-    text-align: center;
-    text-align: center;
-    color: rgba(0, 21, 255, 0.76);
-    font-size: 30px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    margin: auto;
-   
- }
- #feature2 >p{
-    text-align: center;
-    text-align: center;
-    color: rgba(0, 21, 255, 0.76);
-    font-size: 30px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    margin: auto;
-    margin-bottom: 20px;
- } 
-
- #feature3 .fe-box3{
-   display: flex;
-   text-align: center;
-  margin-top: 10px;
-  margin-bottom: 10px;
+    box-sizing: border-box;
+    border-radius:5px;
+    justify-content: space-evenly;
 }
-#feature3 h3 {
-   text-align: center;
-   text-align: center;
-   color: rgba(0, 21, 255, 0.76);
-   font-size: 30px;
-   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-   margin: auto;
-   margin-bottom: 10px;
+#searchbar:hover{
+   background: white;
 }
-#product1{
-   text-align: center;
+#magGlass{
+    padding: 10px;
 }
-#product1 .pro{
-  width: 5%;
-   min-width: 230px;
-   padding: 10px 10px;
-   border: 1px solid #cce7d0;
+#profile,#wishlist,#bag{
+text-align: center;
+color: #6c2632;
 
 }
-#product1 .des{
-background-color: #d4532e;
-color: aliceblue;
-font-size: 20px;
+#profile>p,#wishlist>p,#bag>p{
+    margin-top: -0px;
+    font-size: 12px;
+    color: black;
+}
+#profile>a>i,#wishlist>a>i,#bag>a>i{
+    color:gray;
+}
+img~a>div{
+    color:black;
+}
+a:link{
+    text-decoration: none;
+}
+a>div{
+    color: black;
+}
+
+input {
+    background-color: transparent;
+    border: 0px solid;
+    height: 40px;
+    width: 90%;
+    color: #CCC;
+}
+textarea:focus,input:focus
+{
+    outline: none;
+}
+i{
+    font-size:20px;  
+}
+img{
+    width: 100%;
+
+
+/* TOGGLE BAR */
+/* .bx{
+    font-size: 3.5rem;
+*/
+
+   body{
+    padding: 0;
+    margin: 0;
+}
+
+*{
+    font-family: WhitneySSm,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+         text-align: center;
+}
+/* #first{
+    padding-top: 2px;
+} */
+
+h2 {
+    font-size: 260%;
+    color: 
+    #5b6da8;
+    padding: 50px 80px 50px 80px;
+}
+
+
+#second_row{
+display: grid;
+grid-template-columns: repeat(7,1fr);
+cursor: pointer;
+text-align: center;
+}
+#dealoftheday>div>img{
+width: 100%;
+}
+#best-of-myntra{
+display: grid;
+grid-template-columns: repeat(8,1fr);
+grid-gap: 5px;
+cursor: pointer;
+}
+#best-of-myntra>div>img{
+width: 100%;
+}
+
+#toppicks{
+display: grid;
+grid-template-columns: repeat(7,1fr);
+gap: 10px;
+cursor: pointer;
+}
+#toppicks>div>img{
+width: 100%;
+}
+#categories-to-bag{
+display: grid;
+grid-template-columns: repeat(8,1fr);
+cursor: pointer;
 
 }
+#categories-to-bag>div>img{
+width: 100%;
+}
+
+#deal-on-top-brand{
+display: grid;
+grid-template-columns: repeat(8,1fr);
+cursor: pointer;
+}
+#deal-on-top-brand>div>img{
+width: 100%;
+}
+#style-hottest-finds{
+display: grid;
+grid-template-columns: repeat(7,1fr);
+cursor: pointer;
+}
+#style-hottest-finds>div>img{
+width: 100%;
+}
+#footer{
+background-color:   rgb(250,251,252);
+padding: 50px 60px 40px 60px;
+}
+#footer-top{
+width: 80%;
+margin: auto;
+display: grid;
+grid-template-columns: repeat(4,1fr);
+grid-gap: 20px;
+}
+#footer-bottom>p{
+font-size: 14px;
+color: #94969f;
+}
+#footer-top>div>p{
+color: #94969f;
+} 

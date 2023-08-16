@@ -1,0 +1,28 @@
+@media only screen and (max-width: 800px) {
+    /* Medium Screen  */
+    .navbar #left{
+      display: none;
+    }
+    #first > div{
+      flex-direction: column;
+    }
+    #second_row > div{
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media only screen and (max-width: 500px) {
+    /* Small Screen  */
+    .navbar > #right{
+      display: none;
+    }
+    #first > div{
+      flex-direction: column;
+  }
+  #second > div{
+      grid-template-columns: repeat(1, 1fr);
+    }
+  #footer > div{
+    flex-direction: column;
+  }
+}

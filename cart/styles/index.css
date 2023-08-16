@@ -84,6 +84,7 @@ button:hover{
     gap : 1em;
     height : 10em;
     padding : 1em;
+    border-radius : 0.3em;
 }
 
 .item-card > img{
@@ -118,6 +119,7 @@ button:hover{
 
 .strike-off{
     text-decoration: line-through;
+    color : rgb(83,86,103);
 }
 
 .discount{
@@ -179,4 +181,170 @@ button:hover{
 #total-amount{
     border-top : 1px solid rgb(192, 188, 188);
     margin-top : 0.5em;
+}
+
+#check-delivery{
+    display : none;
+    flex-direction: column;
+    gap : 1em;
+    width : 20%;
+    position: fixed;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+}
+
+#check-delivery > input{
+    border : 1px solid rgb(192, 188, 188);
+    padding : 0.5em;
+    border-radius : 0.2em;
+}
+
+#check-delivery > div{
+    display : flex;
+    justify-content: space-between;
+}
+
+.close-button{
+    border : none;
+    color :  rgb(83,86,103);
+}
+
+.close-button:hover{
+    background-color: white;
+}
+
+#check-delivery > input[type='submit']{
+    color : white;
+    background-color: rgb(255,63,108);
+    width : 100%;
+    font-size : medium;
+    padding : 0.5em;
+    border : none;
+}
+
+#check-delivery > input[type='submit']:hover{
+    background-color:rgba(255, 63, 108, 0.774);
+}
+
+#support-buttons{
+    display : flex;
+    gap: 2em;
+    margin-top : 1em;
+}
+
+#support-buttons > button{
+    color :  rgb(83,86,103);
+    border : 1px solid rgb(212, 217, 243);
+    border-radius: 1em;
+    padding : 0.8em;
+}
+
+#support-buttons > button:hover{
+    background-color: white;
+}
+
+.hidden{
+    display : none
+}
+
+#coupons-container{
+    width : 35%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+}
+
+#coupons-container > div{
+    display : flex;
+    margin-top : 1em;
+}
+
+#coupons-container > div:first-child{
+    gap : 1em;
+}
+
+#coupons-container > div:first-child > button{
+    margin-left: auto;
+    border : none;
+    background-color : white;
+    color : rgb(83,86,103)
+}
+
+#coupons-container > div:last-child{
+    flex-direction: column;
+    gap : 1em;
+    height : 20em;
+    overflow-y: scroll;
+}
+
+.coupon-card{
+    border : 1px solid rgb(192, 188, 188);
+    padding : 1em;
+}
+
+.coupon-card > div{
+    display : none;
+}
+
+.coupon-card:hover > div{
+    display : flex;
+    gap : 1em;
+    top : 100%;
+}
+
+#applied-coupon{
+    border : 1px solid rgb(192, 188, 188);
+    text-align : center;
+    border-radius : 0.5em;
+}
+
+@media screen and (min-width : 701px) and (max-width : 870px){
+    #support-buttons{
+        gap : 0;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (max-width : 700px){
+  #container{
+    flex-direction: column;
+  }
+
+  #manage-item{
+    width : 100%;
+    border-right : none;
+    border-bottom : 1px solid rgb(192, 188, 188);
+  }
+
+  #items{
+    height : 25em;
+    overflow-y: scroll;
+  }
+
+  #place-order{
+    width : 60%;
+    margin : auto;
+  }
+
+  #support-buttons{
+    gap : 2em;
+  }
+}
+
+@media screen and (max-width : 600px){
+    #progress-bar > h4{
+        display : none;
+    }
 }

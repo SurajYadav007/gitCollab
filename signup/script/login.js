@@ -1,24 +1,46 @@
 var form = document.querySelector("form");
-var sing_up_details = JSON.parse(localStorage.getItem("signup-details"));
+var warning = document.getElementById("warning");
+localStorage.setItem("status",JSON.stringify(false));
+
+
+// /////////////
+
+// navbar.js
+
+document.addEventListener("DOMContentLoaded", function () {
+  const navbarPlaceholder = document.getElementById("navbar-placeholder");
+
+  if (navbarPlaceholder) {
+    // Fetch the navigation bar content directly
+    fetch("../index.html")
+      .then(response => response.text())
+      .then(htmlContent => {
+        const tempContainer = document.createElement("div");
+        tempContainer.innerHTML = htmlContent;
+
+        const navbar = tempContainer.querySelector("#navbar");
+
+        if (navbar) {
+          const clonedNavbar = navbar.cloneNode(true);
+          navbarPlaceholder.appendChild(clonedNavbar);
+        }
+      });
+  }
+});
+
+// //////////////////
 
 form.addEventListener("submit",function(el){
     el.preventDefault();
-    var user_n = el.target.UserName.value;
-    var user_pass = el.target.log_password.value;
-    var flag = true;
 
-
-    sing_up_details.forEach(element => {
-        if(element.n_userName == user_n && element.n_password == user_pass){
-            window.location.assign("../Myntra clone/MEN.HTML");
-            localStorage.setItem("Logedin", JSON.stringify(true));
-            flag = false;
-            return;
-        }
-    });
-
-    if(flag){
-       alert("UserName or Password Is Wrong 😊");
+    var num = el.target.number_input.value;
+    
+    if(num.length != 10){
+        warning.style.display = "block";
+    }else{
+        warning.style.display = "none";
+        localStorage.setItem("temp_mobile",JSON.stringify(Number(el.target.number_input.value)));
+        
+        window.location.assign("./otp.html");
     }
-
 })

@@ -94,8 +94,30 @@ button:hover{
     top : 100%
 }
 
+.address-card:hover{
+    border :none;
+    box-shadow: rgba(255, 63, 108, 0.774) 0px 5px 15px;
+    cursor : pointer;
+}
+
+#default-address > .address-card:hover{
+    box-shadow: none;
+    border : 1px solid rgb(192, 188, 188);
+    border-radius: 0.2em;
+    cursor: auto;
+}
+
 #address-form{
     display : none;
+}
+
+#address-form > div{
+    display : flex;
+    justify-content: space-between;
+}
+
+.close-button{
+    border : none;
 }
 
 form{
@@ -128,6 +150,10 @@ form > input[type='submit']{
     font-size : medium;
     padding : 0.5em;
     border : none;
+}
+
+.hidden{
+    display : none;
 }
 
 
