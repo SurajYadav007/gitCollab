@@ -723,7 +723,7 @@ localStorage.setItem("cart-items" , JSON.stringify(bagList))
 
 // LANDING PAGE
 document.getElementById('landingPage').addEventListener('click', function(){
-window.location.href = "index.html"
+  window.location.assign("../../index.html")
 })
 document.querySelector(".fa-heart").addEventListener("click",function(){
 window.location.href ="../wishlist/wishlist.html"

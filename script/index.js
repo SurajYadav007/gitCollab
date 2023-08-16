@@ -11,5 +11,5 @@ var stat = JSON.parse(localStorage.getItem("status"));
             }
 
             btn.addEventListener("click",function(){
-            window.location.assign("./signup.login.html")
+            window.location.assign("./signup/login.html")
             })

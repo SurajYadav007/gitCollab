@@ -101,5 +101,5 @@ var anchors_para = [
   
   // MAIN PAGE
   document.getElementById('landingPage').addEventListener('click', function(){
-      window.location.assign
+      window.location.assign("../../index.html")
   })
