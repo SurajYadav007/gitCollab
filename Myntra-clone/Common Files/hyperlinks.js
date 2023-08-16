@@ -1,7 +1,6 @@
 
 document.querySelector('.fa_user').addEventListener('click', function(){
-    window.location.assign("../signup/index.html")
-
+    window.location.assign("../signup/login.html")
 })
 // HYPERLINKS
 document.querySelector('.fa-heart').addEventListener('click', function(){
