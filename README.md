@@ -36,4 +36,16 @@ Functionalities Added
 
 3. Filter & Sort functionality to products page
 
-4. 
+4. Add to Cart & Wishlist functionalities to Item Details Page
+
+5. Displaying Wishlist Items
+
+6. Display Add to cart Items
+
+7. Storing customers address
+
+8. Making Payment
+
+Image, illustration source
+
+C:\Users\HP\OneDrive\Pictures\Screenshots\Screenshot (390).png
